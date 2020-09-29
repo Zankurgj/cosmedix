@@ -371,6 +371,11 @@
     text-transform: uppercase;
   }
 }
+.main-header-link-m-hide {
+  @media screen and (max-width: $mobile-bp) {
+    display: none;
+  }
+}
 .main-header-link-dropdown-wrapper {
   position: relative;
   &:hover {
