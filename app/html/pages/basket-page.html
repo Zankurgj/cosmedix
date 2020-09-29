@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    @@include('../includes/header.html')
+    <div class="body">
+      <div class="page">
+        <div class="container container--basket">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#" class="breadcrumbs-item">Back</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Basket</span
+              >
+            </li>
+          </ul>
+            <div class="row row--basket basket-detail--border">
+              <div class="basket-item-column">
+                <h1>Корзина</h1>
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <span class="basket-item-badge">
+                      подарок
+                    </span>
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                    <div class="basket-item-cost-inner">
+                      <p class="basket-item-cost">10 910 ₽</p>
+                      <div class="product-card-counter product-card-counter--basket">
+                        <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter1')"><span class="visually-hidden">–</span></button>
+                        <input class="item-counter-input" type="text"  value="0" size="4" id="counter1">
+                        <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter1')"><span class="visually-hidden">+</span></button>
+                      </div>
+                      <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
+                    </div>
+                    <button class="basket-item-delete">
+                      
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">ELEMIS</p>
+                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
+                    <label class="radio-wrapper radio-wrapper--basket"><input type="radio" name="product1"> <span class="radio"></span> <span class="radio-text">Очищающая Ферментная Пудра & Эссенция-Тоник с Розовой Водой (пробный образец)</span></label>
+                    <label class="radio-wrapper radio-wrapper--basket"><input type="radio" name="product1"> <span class="radio"></span> <span class="radio-text">Очищающая Ферментная Пудра & Эссенция-Тоник с Розовой Водой (пробный образец)</span></label>
+                    <div class="basket-item-cost-inner">
+                      <p class="basket-item-cost">0 ₽</p>
+                      <div class="product-card-counter product-card-counter--basket">
+                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
+                      </div>
+                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    </div>
+                    <button class="basket-item-delete">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">ELEMIS</p>
+                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
+                    <div class="basket-item-cost-inner">
+                      <p class="basket-item-cost">0 ₽</p>
+                      <div class="product-card-counter product-card-counter--basket">
+                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
+                      </div>
+                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    </div>
+                    <button class="basket-item-delete">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">ELEMIS</p>
+                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
+                    <div class="basket-item-cost-inner">
+                      <p class="basket-item-cost">0 ₽</p>
+                      <div class="product-card-counter product-card-counter--basket">
+                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
+                      </div>
+                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    </div>
+                    <button class="basket-item-delete">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">ELEMIS</p>
+                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
+                    <div class="basket-item-cost-inner">
+                      <p class="basket-item-cost">0 ₽</p>
+                      <div class="product-card-counter product-card-counter--basket">
+                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
+                      </div>
+                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    </div>
+                    <button class="basket-item-delete">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="basket-detail-column">
+                <div class="basket-detail-inner">
+                  <label class="input-ph-wrapper input-ph-wrapper--detail">
+                    <input type="text" class="input-ph" required>
+                    <span class="input-ph-text">Промокод</span>
+                  </label>
+                  <button class="btn-white btn-white--detail disabled">Применить купон</button>
+                  <div class="basket-detail-text-container">
+                    <p class="basket-detail-text">Стоимость товаров <span class="basket-detail-cost">10 910 ₽</span></p>
+                    <p class="basket-detail-text">Скидка <span class="basket-detail-cost">10 910 ₽</span></p>
+                    <p class="basket-detail-msg">Заказы обрабатываются и отправляются в будние дни с 9:30 до 18:00 по московскому времени. Приём заказов on-line 24/7.</p>
+                    <p class="basket-detail-text basket-detail--border">Итого <span class="basket-detail-cost">10 910 ₽</span></p>
+                    <p class="basket-detail-text basket-detail-text--accent">При оплате онлайн <span class="basket-detail-cost">10 910 ₽</span></p>
+                  </div>
+                  <div class="basket-detail-btns-block">
+                    <button class="btn-white btn-white--pay">Оформить заказ</button>
+                    <button class="btn-white btn-white--icon btn-white--accent btn-white--pay">
+                      <svg class="svg-icon">
+                        <use
+                          xlink:href="./images/sprites/svg/sprite.symbol.svg#icon_order"
+                        ></use>
+                      </svg>
+                      Заказ в 1 клик
+                    </button>
+                    <button class="btn-white btn-white--icon btn-white--pay">
+                      <svg class="svg-icon">
+                        <use
+                          xlink:href="./images/sprites/svg/sprite.symbol.svg#icon_gift"
+                        ></use>
+                      </svg>
+                      Купить в подарок
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="promo-product-slider-wrapper">
+              <h3 class="promo-product-slider-title">Отлично сочетается с</h3>
+              <button
+                  class="slider-arrow slider-arrow--product promo-product--prew slider-arrow--prew"
+                >
+                  <span class="visually-hidden">Назад</span>
+                </button>
+                <button
+                  class="slider-arrow slider-arrow--product promo-product--next slider-arrow--next"
+                >
+                  <span class="visually-hidden">Вперед</span>
+                </button>
+              <div class="promo-product-slider" id="sliderPromoProduct">
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+                <a href="#" class="promo-product-slide">
+                  <div class="promo-product-slide-img-wrapper">
+                    <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                  </div>
+                  <p class="promo-product-slide-cost">$48</p>
+                  <p class="promo-product-slide-name">Shineless</p>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    @@include('../includes/footer.html')
+  </body>
+<script src="js/app.min.js"></script>
+</body>
+</html>

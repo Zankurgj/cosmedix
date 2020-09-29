@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    <div class="main-header-sub-nav-overlay js-sub-nav-overlay"></div>
+<div class="basket-overlay js-basket-overlay" onclick="onToogleBasket()"></div>
+<div
+  class="main-header-nav-overlay js-nav-mobile-overlay"
+  onclick="onToggleMobileMenu()"
+></div>
+<header class="main-header">
+  <div class="container">
+    <!-- logo -->
+    <div class="main-header-inner">
+      <button
+        class="main-header-nav-btn icomon-icon"
+        onclick="onToggleMobileMenu()"
+      >
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a href="#" class="main-header-logo">
+        <img
+          class="main-header-logo-img"
+          src="./images/dest/icons/logo.png"
+          alt="Логотип"
+        />
+        <span class="visually-hidden">Главная страницы</span>
+      </a>
+      <!-- nav -->
+      <nav class="main-header-nav" id="menuMobile">
+        <div class="main-header-nav-title">
+          <span>Меню</span>
+          <button class="mobile-close-btn" onclick="onToggleMobileMenu()">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
+        <ul>
+          <li class="js-sub-nav-parent">
+            <span
+              class="main-header-nav-item main-header-nav--dropdown-wrapper"
+            >
+              <a class="main-header-nav-item--link" href="#">Shop</a>
+              <button
+                class="main-header-nav-item-dropdown"
+                onclick="onToggleDropdownMobile(this)"
+              >
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </span>
+            <!-- sub nav -->
+            <div class="main-header-sub-nav js-sub-nav">
+              <ul class="container main-header-sub-nav-container">
+                <li class="main-header-sub-nav-column-inner">
+                  <div class="main-header-sub-nav-column">
+                    <button
+                      class="main-header-sub-nav-item main-header-sub-nav-item--title"
+                      onclick="onToggleChildDD(this)"
+                    >
+                      Shop
+                    </button>
+                    <ul class="js-child-dropwdown nav-child-dropwdown">
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >All Products</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Bestsellers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Body By COSMEDIX</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >New Arrivals</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Starter Kits</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#">Bundles</a>
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Men's Skincare</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="main-header-sub-nav-column-inner">
+                  <div class="main-header-sub-nav-column">
+                    <button
+                      class="main-header-sub-nav-item main-header-sub-nav-item--title"
+                      onclick="onToggleChildDD(this)"
+                    >
+                      Shop
+                    </button>
+                    <ul class="js-child-dropwdown nav-child-dropwdown">
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >All Products</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Bestsellers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Body By COSMEDIX</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >New Arrivals</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Starter Kits</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#">Bundles</a>
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Men's Skincare</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="main-header-sub-nav-column-inner">
+                  <div class="main-header-sub-nav-column">
+                    <button
+                      class="main-header-sub-nav-item main-header-sub-nav-item--title"
+                      onclick="onToggleChildDD(this)"
+                    >
+                      Shop
+                    </button>
+                    <ul class="js-child-dropwdown nav-child-dropwdown">
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >All Products</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Bestsellers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Body By COSMEDIX</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >New Arrivals</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Starter Kits</a
+                        >
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#">Bundles</a>
+                      </li>
+                      <li>
+                        <a class="main-header-sub-nav-item" href="#"
+                          >Men's Skincare</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="main-header-nav-item" href="#">Press</a>
+          </li>
+          <li>
+            <a class="main-header-nav-item" href="#">Spa Exclusive</a>
+          </li>
+          <li class="main-header-nav-right">
+            <div class="main-header-link main-header-link-dropdown-wrapper">
+              User name
+              <div class="main-header-link-dropdown">
+                <a class="main-header-link-dropdown-item" href="#"
+                  >Личные данные</a
+                >
+                <a class="main-header-link-dropdown-item" href="#"
+                  >Мои заказы</a
+                >
+                <button
+                  class="main-header-link-dropdown-item active main-header-link-dropdown-item--esc"
+                >
+                  Выйти
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="main-header-link"
+              onclick="onTogglePopUp('signinPopup')"
+            >
+              Sign in
+            </button>
+          </li>
+          <li>
+            <button
+              class="main-header-link"
+              onclick="onTogglePopUp('signupPopup')"
+            >
+              Sign up
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header-right-block js-right-block">
+        <button
+          class="main-header-btn main-header-btn--search icomon-icon"
+          onclick="onToggleHeaderSearch()"
+        >
+          <span class="visually-hidden">поиск</span>
+        </button>
+        <button
+          class="main-header-btn main-header-btn--basket icomon-icon"
+          onclick="onToogleBasket()"
+        >
+          <span class="visually-hidden">корзина</span>
+        </button>
+      </div>
+      <div class="main-header-search-wrapper js-search-container">
+        <form class="main-header-search-form">
+          <div class="main-header-search-input-wrapper">
+            <input
+              type="search"
+              class="main-header-search-input"
+              id="headerSearch"
+              maxlength="128"
+              autocomplete="off"
+              placeholder="What are you looking for?"
+            />
+            <button
+              type="submit"
+              class="main-header-search-btn main-header-search-btn--search icomon-icon"
+            >
+              <span class="visually-hidden">поиск</span>
+            </button>
+            <button
+              type="button"
+              class="main-header-search-btn main-header-search-btn--close icomon-icon"
+              onclick="onToggleHeaderSearch()"
+            >
+              <span class="visually-hidden">Закрыть поиск</span>
+            </button>
+          </div>
+        </form>
+        <div class="main-header-result" id="headerSearchContainer">
+          <nav class="main-header-result-nav">
+            <ul>
+              <li>
+                <label class="tabs-block-item">
+                  <input
+                    type="radio"
+                    name="search"
+                    class="tabs-block-item-input visually-hidden"
+                    data-tab-type="search"
+                    data-tab-id="search1"
+                    checked
+                    onchange="onChangeTabs(this)"
+                  />
+                  <span class="main-header-result-nav-item">item1</span>
+                </label>
+              </li>
+              <li>
+                <label class="tabs-block-item">
+                  <input
+                    type="radio"
+                    name="search"
+                    class="tabs-block-item-input visually-hidden"
+                    data-tab-type="search"
+                    data-tab-id="search2"
+                    onchange="onChangeTabs(this)"
+                  />
+                  <span class="main-header-result-nav-item">item2</span>
+                </label>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-header-result-inner">
+            <h4 class="main-header-result-title">PRODUCT SUGGESTIONS</h4>
+            <div
+              class="main-header-result-tab active"
+              id="search1"
+              data-tab-type="search"
+            >
+              <div class="main-header-result-item-wrapper">
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+              </div>
+              <a href="#" class="main-header-result-link"
+                >SEE 1 RESULT FOR "item1"</a
+              >
+            </div>
+            <div
+              class="main-header-result-tab"
+              id="search2"
+              data-tab-type="search"
+            >
+              <div class="main-header-result-item-wrapper">
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+                <a href="#" class="main-header-result-item">
+                  <div
+                    class="main-header-result-item-img"
+                    style="
+                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                    "
+                  ></div>
+                  <p class="main-header-result-item-title">Humidify</p>
+                  <p class="main-header-result-item-text">$90.00</p>
+                </a>
+              </div>
+              <a href="#" class="main-header-result-link"
+                >SEE 1 RESULT FOR "item2"</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="basket-popup" id="basketPopup">
+  <div class="basket-popup-head">
+    <p class="basket-popup-title">
+      Shopping Bag
+      <button class="basket-popup-back-btn" onclick="onToogleBasket()">
+        <span class="visually-hidden">Закрыть корзину</span>
+      </button>
+    </p>
+    <p class="basket-popup-summary"><span>0</span> items</p>
+    <p class="basket-popup-promo">promo text</p>
+    <p class="basket-popup-empty">You have no items in your shopping cart.</p>
+  </div>
+  <div class="basket-popup-item-wrapper">
+    <div class="basket-popup-item-col">
+      <button class="basket-popup-item-btn-remove icomon-icon">
+        <span class="visually-hidden">Удалить из корзины</span>
+      </button>
+      <a href="#" class="basket-popup-item">
+        <div
+          class="basket-popup-item-img"
+          style="
+            background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+          "
+        ></div>
+        <div class="basket-popup-item-details">
+          <p class="basket-popup-item-name">CORRECT</p>
+          <p class="basket-popup-item-subtitle">RAPID RELIEF ACNE TREATMENT</p>
+          <div class="basket-popup-item-qty">
+            <span class="basket-popup-item-qty-text">Qty</span><span>1</span>
+          </div>
+          <span class="basket-popup-item-cost">$37.00</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="basket-popup-item-col">
+      <button class="basket-popup-item-btn-remove icomon-icon">
+        <span class="visually-hidden">Удалить из корзины</span>
+      </button>
+      <a href="#" class="basket-popup-item">
+        <div
+          class="basket-popup-item-img"
+          style="
+            background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+          "
+        ></div>
+        <div class="basket-popup-item-details">
+          <p class="basket-popup-item-name">CORRECT</p>
+          <p class="basket-popup-item-subtitle">RAPID RELIEF ACNE TREATMENT</p>
+          <div class="basket-popup-item-qty">
+            <span class="basket-popup-item-qty-text">Qty</span><span>1</span>
+          </div>
+          <span class="basket-popup-item-cost">$37.00</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="basket-popup-item-col">
+      <button class="basket-popup-item-btn-remove icomon-icon">
+        <span class="visually-hidden">Удалить из корзины</span>
+      </button>
+      <a href="#" class="basket-popup-item">
+        <div
+          class="basket-popup-item-img"
+          style="
+            background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+          "
+        ></div>
+        <div class="basket-popup-item-details">
+          <p class="basket-popup-item-name">CORRECT</p>
+          <p class="basket-popup-item-subtitle">RAPID RELIEF ACNE TREATMENT</p>
+          <div class="basket-popup-item-qty">
+            <span class="basket-popup-item-qty-text">Qty</span><span>1</span>
+          </div>
+          <span class="basket-popup-item-cost">$37.00</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="basket-popup-item-col">
+      <button class="basket-popup-item-btn-remove icomon-icon">
+        <span class="visually-hidden">Удалить из корзины</span>
+      </button>
+      <a href="#" class="basket-popup-item">
+        <div
+          class="basket-popup-item-img"
+          style="
+            background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+          "
+        ></div>
+        <div class="basket-popup-item-details">
+          <p class="basket-popup-item-name">CORRECT</p>
+          <p class="basket-popup-item-subtitle">RAPID RELIEF ACNE TREATMENT</p>
+          <div class="basket-popup-item-qty">
+            <span class="basket-popup-item-qty-text">Qty</span><span>1</span>
+          </div>
+          <span class="basket-popup-item-cost">$37.00</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="basket-popup-item-col">
+      <button class="basket-popup-item-btn-remove icomon-icon">
+        <span class="visually-hidden">Удалить из корзины</span>
+      </button>
+      <a href="#" class="basket-popup-item">
+        <div
+          class="basket-popup-item-img"
+          style="
+            background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+          "
+        ></div>
+        <div class="basket-popup-item-details">
+          <p class="basket-popup-item-name">CORRECT</p>
+          <p class="basket-popup-item-subtitle">RAPID RELIEF ACNE TREATMENT</p>
+          <div class="basket-popup-item-qty">
+            <span class="basket-popup-item-qty-text">Qty</span><span>1</span>
+          </div>
+          <span class="basket-popup-item-cost">$37.00</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="basket-popup-price">
+    <p class="basket-popup-total">
+      <span class="basket-popup-total-text">Total:</span>
+      <span class="basket-popup-total-cost">$37.00</span>
+    </p>
+    <a href="#" class="basket-popup-bskt-btn">view bag / checkout</a>
+  </div>
+</div>
+
+<div class="popup-wrapper popup--signup" id="signupPopup">
+  <div class="popup-overlay" onclick="onTogglePopUp('signupPopup')"></div>
+  <button class="popup-close" onclick="onTogglePopUp('signupPopup')">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <div class="popup-inner"><section class="signup-container popup-container">
+  <h3 class="popup-caption">Регистрация</h3>
+  <p class="popup-subtitle">войти с помощью</p>
+  <div class="popup-sicial">
+    <button class="popup-sicial-item popup-sicial-item--vk"></button>
+    <button class="popup-sicial-item popup-sicial-item--fb"></button>
+  </div>
+  <form action="">
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">Имя</span>
+    </label>
+    <div class="popup-radio-wrapper">
+      <span class="popup-radio-title">Пол</span>
+      <label class="radio-wrapper radio-wrapper--popup">
+        <input type="radio" name="gender" />
+        <span class="radio"></span>
+        <span class="radio-text radio-text--popup">женский</span>
+      </label>
+
+      <label class="radio-wrapper radio-wrapper--popup">
+        <input type="radio" name="gender" />
+        <span class="radio"></span>
+        <span class="radio-text radio-text--popup">мужской</span>
+      </label>
+    </div>
+
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">E-mail</span>
+    </label>
+
+    <label class="checkbox-wrapper checkbox-wrapper--popup">
+      <input type="checkbox" name="subcribe" />
+      <span class="checkbox"></span>
+      <span>
+        <p class="radio-text">получать рассылку от Skinbutik</p>
+      </span>
+    </label>
+
+    <label class="checkbox-wrapper checkbox-wrapper--popup">
+      <input type="checkbox" name="personalData" />
+      <span class="checkbox"></span>
+      <span>
+        <p class="radio-text">принимаю условия обработки персональных</p>
+      </span>
+    </label>
+    <button class="btn-pink btn-pink--popup-submit">Отправить</button>
+  </form>
+</section>
+</div>
+</div>
+
+<div class="popup-wrapper popup--signup" id="signinPopup">
+  <div class="popup-overlay" onclick="onTogglePopUp('signinPopup')"></div>
+  <button class="popup-close" onclick="onTogglePopUp('signinPopup')">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <div class="popup-inner"><section class="signup-container popup-container">
+  <h3 class="popup-caption">Авторизация</h3>
+  <p class="popup-subtitle">войти с помощью</p>
+  <div class="popup-sicial">
+    <button class="popup-sicial-item popup-sicial-item--vk"></button>
+    <button class="popup-sicial-item popup-sicial-item--fb"></button>
+  </div>
+  <form action="">
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">Имя</span>
+    </label>
+
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">E-mail</span>
+    </label>
+
+    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+
+    <div class="popup-btns-wrapper">
+      <button
+        class="btn-link"
+        type="button"
+        onclick="onChangePopup('recoveryPopup')"
+      >
+        забыли пароль?
+      </button>
+      <button
+        class="btn-link"
+        type="button"
+        onclick="onChangePopup('signupPopup')"
+      >
+        регистрация
+      </button>
+    </div>
+  </form>
+</section>
+</div>
+</div>
+
+<div class="popup-wrapper popup--signup" id="recoveryPopup">
+  <div class="popup-overlay" onclick="onTogglePopUp('recoveryPopup')"></div>
+  <button class="popup-close" onclick="onTogglePopUp('recoveryPopup')">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <div class="popup-inner"><section class="signup-container popup-container">
+  <h3 class="popup-caption popup-caption--recovery">Восстановление пароля</h3>
+  <form
+    class="popup-caption-form"
+    onsubmit="onSubmitRecovery(this);return false;"
+    id="recoveryForm"
+  >
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">E-mail</span>
+    </label>
+    <button class="btn-white btn-pink--popup-submit" type="submit">
+      Отправить
+    </button>
+  </form>
+  <p class="popup-text popup-text--hide center" id="recoveryText">
+    Контрольная строка, а также ваши регистрационные данные были высланы на
+    email. Пожалуйста, дождитесь письма, так как контрольная строка изменяется
+    при каждом запросе.
+  </p>
+</section>
+<script>
+  function onSubmitRecovery() {
+    document
+      .querySelector('#recoveryText')
+      .classList.remove('popup-text--hide');
+    document
+      .querySelector('#recoveryForm')
+      .classList.add('popup-caption-form--hide');
+  }
+</script>
+</div>
+</div>
+
+    <div class="body">
+      <div class="page">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Skincare</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Purpose</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Cleansers</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Purity Solution</span
+              >
+            </li>
+          </ul>
+
+          <section class="product-card">
+            <div class="row">
+              <div class="product-card-col">
+                <div class="product-card-slider-wrapper">
+                  <div class="product-card-slider" id="productCardSlider">
+                    <div class="product-card-slide" data-image="./images/dest/img/slider-product1.jpg">
+                      <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="product-card-slide-img">
+                    </div>
+                    <div class="product-card-slide" data-image="./images/dest/img/slider-product2.jpg">
+                      <img src="./images/dest/img/slider-product2.jpg" alt="Продукт" class="product-card-slide-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-col">
+                <h2 class="product-card-name">PURITY SOLUTION</h2>
+                <p class="product-card-cost">$35.00</p>
+                <div class="product-card-stars">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <h4 class="product-card-subtitle">Nourishing Deep Cleansing Oil</h4>
+                <div class="product-card-about">
+                  <div class="product-card-counter-block">
+                    <div class="product-card-title">
+                      Qty
+                    </div>
+                    <div class="product-card-counter">
+                      <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter1')"><span class="visually-hidden">–</span></button>
+                      <input class="item-counter-input" type="text"  value="0" size="4" id="counter1">
+                      <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter1')"><span class="visually-hidden">+</span></button>
+                    </div>
+                  </div>
+                  <div class="product-card-size-block">
+                    <div class="product-card-title">
+                      Size
+                    </div>
+                    <span class="product-card-title">3.3 fl oz / 100 ml
+                    </span>
+                  </div>
+                  <button class="btn--simple btn--simple-hover" onclick="onToogleBasket()">Add to Bag</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="product-tabs-block">
+            <div class="tabs-title-block">
+              <div class="tabs-title-item-wrapper">
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product1"
+                  checked
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">WHY IT WORKS</span>
+                </label>
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product2"
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">Benefits</span>
+                </label>
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product3"
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">Application</span>
+                </label>
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product4"
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">Ingredients</span>
+                </label>
+              </div>
+            </div>  
+            <div class="tabs-product-block">
+              <div class="tabs-product-item active" data-tab-type="product" id="product1">
+                <div class="tabs-product-item-col tabs-product-item--text">
+                  <p class="tabs-product-title">WHAT IT IS:</p>
+                <p class="tabs-product-text">Purity Solution Nourishing Deep Cleansing Oil is a two-in-one makeup remover and cleanser with a nutrient-rich blend of radiance-boosting oils that gently melt away dirt, oil, makeup and impurities for a hydrated, healthy-looking glow.</p>
+                <p class="tabs-product-title">WHAT IT DOES:</p>
+                <p class="tabs-product-text">• Removes makeup and impurities without stripping skin of natural moisture <br>
+                  • Helps to purify skin for a smoother-looking complexion <br>
+                  • Aids in nourishing the complexion with radiance-boosting vitamins</p>
+                  <p class="tabs-product-text">Skin that feels healthier and more hydrated after cleansing? That’s unheard of—until now. Formulated with a nutrient-rich blend of olive, moringa, kukui, safflower, sesame and argan oils, Purity Solution Nourishing Deep Cleansing Oil works to gently break down dirt, excess oil, long-wear makeup and sunscreen, rinsing completely clean with water and leaving skin feeling soft, supple, hydrated and healthy-looking—never tight or greasy. Gentle enough to use even on the eye and lip area, this multitasking cleansing oil nourishes the skin with nutrients as it aids in purifying the complexion—making it the perfect solution for completely cleansing skin daily without stripping away essential moisture.</p>
+                </div>
+                <div class="tabs-product-item-col tabs-product-item--img tabs-product-item--center">
+                  <img class="img-response" src="./images/dest/img/product-tab-img.jpg" alt="Продукт">
+                </div>
+              </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product2">
+                <div class="tabs-product-item-features-block">
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product3">
+                <div class="row row--application">
+                  <div class="application-col">
+                    <div class="application-item-inner">
+                      <div class="application-item application-item--1">
+                        <img class="application-item-img" src="./images/dest/img/application1.svg" alt="особенности">
+                         <p class="application-title">Night</p>
+                         <p class="application-text">At night, shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Benefit Clean for normal to dry skin or Purity Clean for normal, combo or oily skin.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application-col">
+                    <div class="application-item-inner">
+                      <div class="application-item application-item--2">
+                        <img class="application-item-img" src="./images/dest/img/application2.svg" alt="особенности">
+                        <p class="application-title">Day</p>
+                         <p class="application-text">Shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Shineless or Mystic for oily, acne-prone or combination skin—Emulsion or Humidify for normal to dry skin.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product4">
+                 <div class="row">
+                  <div class="ingredients-col">
+                    <div class="ingredients-item">
+                      <img class="ingredients-item-img img-response" src="./images/dest/img/ingredients.jpg" alt="ингредиенты">
+                    </div>
+                  </div> 
+
+                  <div class="ingredients-col">
+                    <div class="ingredients-item ingredients-item--text">
+                      <p class="tabs-product-title">All Ingredients</p>
+                      <p class="tabs-product-text">OLEA EUROPAEA (OLIVE) FRUIT OIL, CAPRYLIC/CAPRIC TRIGLYCERIDE, SORBETH-30 TETRAOLEATE, MORINGA OLEIFERA (PTERYGOSPERMA) SEED OIL, ALEURITES MOLUCCANA (KUKUI) SEED OIL, ARGANIA SPINOSA KERNEL (ARGAN) OIL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, SESAMUM INDICUM (SESAME) SEED OIL, GLYCINE SOJA (SOYBEAN) OIL, TOCOPHERYL ACETATE (VITAMIN E), RETINYL PALMITATE, MELIA AZADIRACHTA (NEEM) LEAF EXTRACT, MELIA AZADIRACHTA (NEEM) FLOWER EXTRACT, AMBER POWDER, CORALLINA OFFICIANLIS EXTRACT, COCCINIA INDICA FRUIT EXTRACT, SOLANUM MELONGENA (EGGPLANT) FRUIT EXTRACT, CURCUMA LONGA (TURMERIC) LEAF EXTRACT, OCIMUM SANCTUM LEAF EXTRACT, CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL, ASCORBYL PALMITATE, LIMONENE, PROPANEDIOL, ETHYLHEXYLGLYCERIN, CAPRYLYL GLYCOL, CAPRYLHYDROXAMIC ACID</p>
+                    </div>
+                  </div> 
+                 </div>
+              </div>
+            </div>
+          </section>
+          <section class="promo-product-slider-wrapper">
+            <h3 class="promo-product-slider-title">COMPLETE YOUR ROUTINE</h3>
+            <button
+                class="slider-arrow slider-arrow--product promo-product--prew slider-arrow--prew"
+              >
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button
+                class="slider-arrow slider-arrow--product promo-product--next slider-arrow--next"
+              >
+                <span class="visually-hidden">Вперед</span>
+              </button>
+            <div class="promo-product-slider" id="sliderPromoProduct">
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+            </div>
+          </section>
+      </div>
+    </div>
+    <footer class="main-footer">
+  <div class="container">
+    <div class="row row--main-footer">
+      <div class="main-footer-block-nav">
+        <div class="main-footer-block-nav-col">
+          <button
+            class="footer-block-nav-item footer-block-nav-item--title footer-block-nav-item-btn"
+            onclick="onToggleFooterDropDown(this)"
+          >
+            Customer Care
+          </button>
+          <ul class="footer-dropdown js-dropdown-footer">
+            <li>
+              <p class="footer-block-nav-item footer-block-nav-item--title">
+                1-800-676-9522
+              </p>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Shipping and Returns</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Customer Reviews</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >FAQs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Check Authenticity</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Spa Finder</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer-block-nav-col">
+          <button
+            class="footer-block-nav-item footer-block-nav-item--title footer-block-nav-item-btn"
+            onclick="onToggleFooterDropDown(this)"
+          >
+            The Company
+          </button>
+          <ul class="footer-dropdown js-dropdown-footer">
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >FAQs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Check Authenticity</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Spa Finder</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Student Discount</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="footer-block-nav-item footer-block-nav-item--link"
+                >Spa Finder</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer-social-block">
+        <div class="footer-subscribe-block">
+          <p class="footer-block-nav-item footer-block-nav-item--title">
+            Newsletter
+          </p>
+          <form
+            class="footer-subscribe-form"
+            onsubmit="onSubmitSubscribe(this);return false;"
+          >
+            <input
+              type="email"
+              class="base-input base-input--subscribe"
+              placeholder="E-mail"
+              id="subscribeInput"
+              required
+            />
+            <button
+              class="btn--simple btn--subscribe btn--simple-hover"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <div class="footer-social-block">
+          <p class="footer-block-nav-item footer-block-nav-item--title">
+            Connect with us
+          </p>
+          <div class="footer-social-items">
+            <a href="#" class="footer-social-item footer-social-item--fb"
+              ><span class="visually-hidden">фейсбук</span></a
+            >
+            <a href="#" class="footer-social-item footer-social-item--inst"
+              ><span class="visually-hidden">инстаграмм</span></a
+            >
+            <a href="#" class="footer-social-item footer-social-item--vk"
+              ><span class="visually-hidden">Вконтакте</span></a
+            >
+            <a href="#" class="footer-social-item footer-social-item--ok"
+              ><span class="visually-hidden">Одноклассники</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

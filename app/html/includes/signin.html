@@ -1,0 +1,38 @@
+<section class="signup-container popup-container">
+  <h3 class="popup-caption">Авторизация</h3>
+  <p class="popup-subtitle">войти с помощью</p>
+  <div class="popup-sicial">
+    <button class="popup-sicial-item popup-sicial-item--vk"></button>
+    <button class="popup-sicial-item popup-sicial-item--fb"></button>
+  </div>
+  <form action="">
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">Имя</span>
+    </label>
+
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">E-mail</span>
+    </label>
+
+    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+
+    <div class="popup-btns-wrapper">
+      <button
+        class="btn-link"
+        type="button"
+        onclick="onChangePopup('recoveryPopup')"
+      >
+        забыли пароль?
+      </button>
+      <button
+        class="btn-link"
+        type="button"
+        onclick="onChangePopup('signupPopup')"
+      >
+        регистрация
+      </button>
+    </div>
+  </form>
+</section>

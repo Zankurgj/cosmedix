@@ -1,0 +1,41 @@
+.breadcrumbs--lk {
+  margin-bottom: 30px;
+}
+.persanal-link-item {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #000;
+  &.active {
+    text-decoration: underline;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.persanal-data-title {
+  min-width: 100%;
+  margin-bottom: 30px;
+}
+.persanal-link-block {
+  max-width: 300px;
+  flex-basis: 300px;
+  padding-top: 6px;
+}
+.persanal-data-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+.input-ph-wrapper--lk {
+  max-width: 50%;
+  flex-basis: 50%;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.btn--lk-pwd {
+  margin-left: auto;
+  margin-right: 30px;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    @@include('../includes/header.html')
+    <div class="body">
+      <div class="page">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Skincare</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Purpose</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Cleansers</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Purity Solution</span
+              >
+            </li>
+          </ul>
+
+          <section class="product-card">
+            <div class="row">
+              <div class="product-card-col">
+                <div class="product-card-slider-wrapper">
+                  <div class="product-card-slider" id="productCardSlider">
+                    <div class="product-card-slide" data-image="./images/dest/img/slider-product1.jpg">
+                      <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="product-card-slide-img">
+                    </div>
+                    <div class="product-card-slide" data-image="./images/dest/img/slider-product2.jpg">
+                      <img src="./images/dest/img/slider-product2.jpg" alt="Продукт" class="product-card-slide-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-col">
+                <h2 class="product-card-name">PURITY SOLUTION</h2>
+                <p class="product-card-cost">$35.00</p>
+                <div class="product-card-stars">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <h4 class="product-card-subtitle">Nourishing Deep Cleansing Oil</h4>
+                <div class="product-card-about">
+                  <div class="product-card-counter-block">
+                    <div class="product-card-title">
+                      Qty
+                    </div>
+                    <div class="product-card-counter">
+                      <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter1')"><span class="visually-hidden">–</span></button>
+                      <input class="item-counter-input" type="text"  value="0" size="4" id="counter1">
+                      <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter1')"><span class="visually-hidden">+</span></button>
+                    </div>
+                  </div>
+                  <div class="product-card-size-block">
+                    <div class="product-card-title">
+                      Size
+                    </div>
+                    <span class="product-card-title">3.3 fl oz / 100 ml
+                    </span>
+                  </div>
+                  <button class="btn--simple btn--simple-hover" onclick="onToogleBasket()">Add to Bag</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="product-tabs-block">
+            <div class="tabs-title-block">
+              <div class="tabs-title-item-wrapper">
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product1"
+                  checked
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">WHY IT WORKS</span>
+                </label>
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product2"
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">Benefits</span>
+                </label>
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product3"
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">Application</span>
+                </label>
+                <label> 
+                  <input
+                  type="radio"
+                  name="product"
+                  class="tabs-block-item-input visually-hidden"
+                  data-tab-type="product"
+                  data-tab-id="product4"
+                  onchange="onChangeTabs(this)"
+                  >
+                  <span class="tabs-title-item-text">Ingredients</span>
+                </label>
+              </div>
+            </div>  
+            <div class="tabs-product-block">
+              <div class="tabs-product-item active" data-tab-type="product" id="product1">
+                <div class="tabs-product-item-col tabs-product-item--text">
+                  <p class="tabs-product-title">WHAT IT IS:</p>
+                <p class="tabs-product-text">Purity Solution Nourishing Deep Cleansing Oil is a two-in-one makeup remover and cleanser with a nutrient-rich blend of radiance-boosting oils that gently melt away dirt, oil, makeup and impurities for a hydrated, healthy-looking glow.</p>
+                <p class="tabs-product-title">WHAT IT DOES:</p>
+                <p class="tabs-product-text">• Removes makeup and impurities without stripping skin of natural moisture <br>
+                  • Helps to purify skin for a smoother-looking complexion <br>
+                  • Aids in nourishing the complexion with radiance-boosting vitamins</p>
+                  <p class="tabs-product-text">Skin that feels healthier and more hydrated after cleansing? That’s unheard of—until now. Formulated with a nutrient-rich blend of olive, moringa, kukui, safflower, sesame and argan oils, Purity Solution Nourishing Deep Cleansing Oil works to gently break down dirt, excess oil, long-wear makeup and sunscreen, rinsing completely clean with water and leaving skin feeling soft, supple, hydrated and healthy-looking—never tight or greasy. Gentle enough to use even on the eye and lip area, this multitasking cleansing oil nourishes the skin with nutrients as it aids in purifying the complexion—making it the perfect solution for completely cleansing skin daily without stripping away essential moisture.</p>
+                </div>
+                <div class="tabs-product-item-col tabs-product-item--img tabs-product-item--center">
+                  <img class="img-response" src="./images/dest/img/product-tab-img.jpg" alt="Продукт">
+                </div>
+              </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product2">
+                <div class="tabs-product-item-features-block">
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-product-item-features-col">
+                    <div class="tabs-product-item-features">
+                      <div class="tabs-product-item-features-inner">
+                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                      <p class="tabs-product-item-features-text">
+                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product3">
+                <div class="row row--application">
+                  <div class="application-col">
+                    <div class="application-item-inner">
+                      <div class="application-item application-item--1">
+                        <img class="application-item-img" src="./images/dest/img/application1.svg" alt="особенности">
+                         <p class="application-title">Night</p>
+                         <p class="application-text">At night, shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Benefit Clean for normal to dry skin or Purity Clean for normal, combo or oily skin.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application-col">
+                    <div class="application-item-inner">
+                      <div class="application-item application-item--2">
+                        <img class="application-item-img" src="./images/dest/img/application2.svg" alt="особенности">
+                        <p class="application-title">Day</p>
+                         <p class="application-text">Shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Shineless or Mystic for oily, acne-prone or combination skin—Emulsion or Humidify for normal to dry skin.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product4">
+                 <div class="row">
+                  <div class="ingredients-col">
+                    <div class="ingredients-item">
+                      <img class="ingredients-item-img img-response" src="./images/dest/img/ingredients.jpg" alt="ингредиенты">
+                    </div>
+                  </div> 
+
+                  <div class="ingredients-col">
+                    <div class="ingredients-item ingredients-item--text">
+                      <p class="tabs-product-title">All Ingredients</p>
+                      <p class="tabs-product-text">OLEA EUROPAEA (OLIVE) FRUIT OIL, CAPRYLIC/CAPRIC TRIGLYCERIDE, SORBETH-30 TETRAOLEATE, MORINGA OLEIFERA (PTERYGOSPERMA) SEED OIL, ALEURITES MOLUCCANA (KUKUI) SEED OIL, ARGANIA SPINOSA KERNEL (ARGAN) OIL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, SESAMUM INDICUM (SESAME) SEED OIL, GLYCINE SOJA (SOYBEAN) OIL, TOCOPHERYL ACETATE (VITAMIN E), RETINYL PALMITATE, MELIA AZADIRACHTA (NEEM) LEAF EXTRACT, MELIA AZADIRACHTA (NEEM) FLOWER EXTRACT, AMBER POWDER, CORALLINA OFFICIANLIS EXTRACT, COCCINIA INDICA FRUIT EXTRACT, SOLANUM MELONGENA (EGGPLANT) FRUIT EXTRACT, CURCUMA LONGA (TURMERIC) LEAF EXTRACT, OCIMUM SANCTUM LEAF EXTRACT, CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL, ASCORBYL PALMITATE, LIMONENE, PROPANEDIOL, ETHYLHEXYLGLYCERIN, CAPRYLYL GLYCOL, CAPRYLHYDROXAMIC ACID</p>
+                    </div>
+                  </div> 
+                 </div>
+              </div>
+            </div>
+          </section>
+          <section class="promo-product-slider-wrapper">
+            <h3 class="promo-product-slider-title">COMPLETE YOUR ROUTINE</h3>
+            <button
+                class="slider-arrow slider-arrow--product promo-product--prew slider-arrow--prew"
+              >
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button
+                class="slider-arrow slider-arrow--product promo-product--next slider-arrow--next"
+              >
+                <span class="visually-hidden">Вперед</span>
+              </button>
+            <div class="promo-product-slider" id="sliderPromoProduct">
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+              <a href="#" class="promo-product-slide">
+                <div class="promo-product-slide-img-wrapper">
+                  <img src="./images/dest/img/slider-product1.jpg" alt="Продукт" class="promo-product-slide-img">
+                </div>
+                <p class="promo-product-slide-cost">$48</p>
+                <p class="promo-product-slide-name">Shineless</p>
+              </a>
+            </div>
+          </section>
+      </div>
+    </div>
+    @@include('../includes/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

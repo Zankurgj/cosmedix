@@ -1,0 +1,19 @@
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/slick-carousel/slick/slick.scss';
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import 'node_modules/font-awesome/scss/font-awesome.scss';
+
+// USER VARIABLES SECTION
+
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+// FONTS LOAD SECTION
+
+// @include font('OpenSans', bold, 700, '../fonts/OpenSans-Bold');
+// @include font('OpenSans', normal, 400, '../fonts/OpenSans-Regular');
+// @include font('OpenSans', semibold, 600, '../fonts/OpenSans-Semibold');
+// @include font('OpenSans', thin, 200, '../fonts/OpenSans-Light');
+// @include font('Lato', normal, 400, '../fonts/Lato-Regular');
+// @include font('DS-Digital Bold', bold, 700, '../fonts/ds-digital-bold');
+// GENERAL DOCUMENT STYLES

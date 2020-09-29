@@ -1,0 +1,26 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    src: url($f-url + '.woff2') format('woff2');
+    src: url($f-url + '.woff') format('woff');
+  }
+}
+@include font('Whitney', italic, 400, '../fonts/Whitney-MediumItalic');
+@include font('Gotham-Book', normal, 400, '../fonts/GothamBook');
+
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular');
+@include font('Montserrat', normal, 500, '../fonts/Montserrat-Medium');
+@include font('Montserrat', normal, 300, '../fonts/Montserrat-Light');
+@include font('Montserrat', italic, 400, '../fonts/Montserrat-Italic');
+@include font('Montserrat', normal, 200, '../fonts/Montserrat-ExtraLight');
+@include font('Montserrat', normal, 700, '../fonts/Montserrat-Bold');
+@include font('Montserrat', normal, 900, '../fonts/Montserrat-Black');
+
+@font-face {
+  font-family: 'Icomoon';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/icomoon.ttf') format('truetype');
+}

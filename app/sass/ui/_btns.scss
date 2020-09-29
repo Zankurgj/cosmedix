@@ -1,0 +1,110 @@
+button,
+.btn,
+input[type='submit'] {
+  display: inline-block;
+  background-color: transparent;
+  border-style: none;
+  border-width: none;
+  border-color: transparent;
+  font-family: $mainfamily;
+  transition: all $base-duration $base-timing;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn--simple {
+  display: inline-block;
+  background-color: #25272b;
+  color: #fff;
+  padding: 1em 2em;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border: 1px solid #25272b;
+  &:hover {
+    color: #fff;
+  }
+}
+.btn--simple-hover {
+  &:hover {
+    background-color: #fff;
+    color: #25272b;
+  }
+}
+
+.btn-white {
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #25272b;
+  font-family: 'Helvetica Neue', Verdana, Arial, sans-serif;
+  border: 1px solid #25272b;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #25272b;
+    color: #fff;
+  }
+  &.active {
+    background-color: #25272b;
+    color: #fff;
+  }
+  &:disabled,
+  &.disabled {
+    color: #25272b;
+    background-color: #eee;
+    border-color: #eee;
+  }
+}
+.btn-white--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .svg-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}
+.btn-white--accent {
+  background-color: #fec4b0;
+  &:hover {
+    background-color: #fec4b0;
+  }
+}
+.btn-pink {
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #25272b;
+  font-family: 'Helvetica Neue', Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: #fec4b0;
+  &:hover {
+    color: #fff;
+  }
+  &:disabled,
+  &.disabled {
+    color: #25272b;
+    background-color: #eee;
+    border-color: #eee;
+  }
+}
+.btn-link {
+  text-decoration: underline;
+  color: #25272b;
+  &:hover {
+    text-decoration: none;
+  }
+}

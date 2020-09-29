@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    @@include('../includes/header.html')
+    <div class="body">
+      <div class="page professional-page">
+        <div class="container container--professional">
+          <div class="row row--professional">
+            <aside class="professional-nav">
+              <h2 class="professional-nav-title">THE COMPANY</h2>
+              <nav class="professional-nav">
+                <a href="./contacts-page.html" class="professional-nav-item"
+                  >Контакты</a
+                >
+                <a href="#" class="professional-nav-item">item1</a>
+                <a href="#" class="professional-nav-item">item2</a>
+                <a href="#" class="professional-nav-item">item3</a>
+              </nav>
+            </aside>
+
+            <div class="professional-container">
+              <h1 class="h1-title h1-title--professional">Professional</h1>
+              <img
+                src="./images/dest/img/professional.jpg"
+                alt="Продукт"
+                class="img-response img--professional"
+              />
+              <div class="professional-btn-block">
+                <a
+                  href="#professional-form"
+                  class="btn--simple btn--simple-hover btn--professional"
+                  >Become a Professional</a
+                >
+                <button
+                  class="btn-white"
+                  onclick="onTogglePopUp('signinPopup')"
+                >
+                  sign in as a professional
+                </button>
+              </div>
+              <p class="simple-text simple-text--professional">
+                Looking for a TRUE partnership with a professional skincare
+                brand created by professionals for professionals? COSMEDIX has
+                the solution. We create customized business plans and offer
+                world-class education to make sure our business partnership is
+                mutually successful. Our accounts enjoy sustainable,
+                year-over-year growth in both service and retail revenue. We
+                support our accounts on an individual “one size fits one”
+                approach – tailoring our support to each partner's business
+                needs. For more information, please fill out the below form. We
+                will contact you to schedule a meeting to discuss your needs and
+                a potential partnership. Please note that COSMEDIX products are
+                only available for resale to licensed professionals.
+              </p>
+              <h3 class="simple-text-title">4 PILLARS OF FORMULATION:</h3>
+              <p class="simple-text simple-text--professional">
+                The chemistry may be complex, but the concept is simple: to give
+                you the strongest, most effective tools to help your client’s
+                skin look and feel its best. Our continued innovation and
+                groundbreaking success comes from focused attention to our
+                ingredient standards and four pillars of formulation
+              </p>
+              <div class="simple-text simple-text--professional">
+                <ul>
+                  <li>
+                    <strong>INTELLIGENT EXFOLIATION</strong> allows our active
+                    ingredients to penetrate the skin for maximum efficacy.
+                  </li>
+                  <li>
+                    <strong>BOTANICAL INGREDIENTS</strong> create cleaner
+                    formulations.
+                  </li>
+                  <li>
+                    <strong>SKIN MATRIX SUPPORT</strong> provides the building
+                    blocks for cell rejuvenation and skin restoration.
+                  </li>
+                  <li>
+                    <strong>CHIRAL CORRECTION</strong>creates a partnership with
+                    the skin to reduce irritation ensuring desired results
+                  </li>
+                </ul>
+              </div>
+              <h3 class="simple-text-title">
+                THE POWER OF METABOLIC PEELS & HOME CARE:
+              </h3>
+              <p class="simple-text simple-text--professional">
+                We discovered a far more effective way to peel back rough,
+                blemished and aging skin without harsh chemicals that can damage
+                the skin, contribute to “inflammaging” and require extensive
+                downtime. COSMEDIX’s revolutionary approach is found in our
+                metabolic peels made of chirally correct botanical ingredients
+                and potent actives. They tell the skin to peel by working
+                holistically to help stimulate the skin’s natural renewal
+                process instead of forcing it into submission. Our peels help
+                repair the skin’s barrier function with the use of purified
+                alpha hydroxy acids, proprietary encapsulated Retinol, Nobel
+                Prize-winning chemistry as well as utilizing a complex blend of
+                antioxidants and anti-inflammatory ingredients. This
+                revolutionary approach helps you minimize shock to your client’s
+                skin and the risk of adverse side effects. Complemented by
+                COSMEDIX’s gentle yet effective home care, your clients can help
+                prep, protect and maintain their results between treatments
+              </p>
+              <form action="" class="professional-form" id="professional-form">
+                <h1 class="h1-title h1-title--professional">
+                  Заполните форму и станьте нашим партнером
+                </h1>
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Имя</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Название проекта</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Город</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">E-mail</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Телефон</span>
+                </label>
+                <h3 class="simple-text-title">Ваше сообщение</h3>
+                <textarea
+                  class="text-area-base text-area-base--professional"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn--simple btn--simple-hover btn--professional-form"
+                >
+                  Отправить
+                </button>
+                <p class="simple-text-form">
+                  Нажимая на кнопку, вы даете согласие на обработку персональных
+                  данных и соглашаетесь
+                  <a class="btn-link" href="./privacy-policy.html"
+                    >c политикой конфиденциальности</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('../includes/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

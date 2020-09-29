@@ -1,0 +1,31 @@
+<section class="signup-container popup-container">
+  <h3 class="popup-caption popup-caption--recovery">Восстановление пароля</h3>
+  <form
+    class="popup-caption-form"
+    onsubmit="onSubmitRecovery(this);return false;"
+    id="recoveryForm"
+  >
+    <label class="input-ph-wrapper input-ph-wrapper--popup">
+      <input type="text" class="input-ph" required />
+      <span class="input-ph-text">E-mail</span>
+    </label>
+    <button class="btn-white btn-pink--popup-submit" type="submit">
+      Отправить
+    </button>
+  </form>
+  <p class="popup-text popup-text--hide center" id="recoveryText">
+    Контрольная строка, а также ваши регистрационные данные были высланы на
+    email. Пожалуйста, дождитесь письма, так как контрольная строка изменяется
+    при каждом запросе.
+  </p>
+</section>
+<script>
+  function onSubmitRecovery() {
+    document
+      .querySelector('#recoveryText')
+      .classList.remove('popup-text--hide');
+    document
+      .querySelector('#recoveryForm')
+      .classList.add('popup-caption-form--hide');
+  }
+</script>

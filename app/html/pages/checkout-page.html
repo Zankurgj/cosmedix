@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    @@include('../includes/header.html')
+    <div class="body">
+      <div class="page">
+        <div class="container container--chekout">
+          <ul class="breadcrumbs breadcrumbs--checkout">
+            <li>
+              <a href="#" class="breadcrumbs-item">Back</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Оформление заказа</span
+              >
+            </li>
+          </ul>
+          <h1 class="checkout-title">Оформление заказа</h1>
+          <div class="checkout-auth-msg">
+            <p>Уже покупали у нас? <button class="btn-link auth-btn">Авторизуйтесь!</button></p>
+          </div>
+          <form class="checkout-form">
+            <div class="checkout-form-col">
+              <div class="checkout-form-block">
+                <h2 class="checkout-form-title">Персональные данные</h2>
+              <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                <input type="text" class="input-ph" required>
+                <span class="input-ph-text">ФИО</span>
+              </label>
+              <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                <input type="text" class="input-ph" required>
+                <span class="input-ph-text">E-mail</span>
+              </label>
+              <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                <input type="text" class="input-ph" required>
+                <span class="input-ph-text">Телефон</span>
+              </label>
+              <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                <input type="text" class="input-ph" required>
+                <span class="input-ph-text">Город</span>
+              </label>
+              </div>
+              <div class="checkout-form-block">
+                <h2 class="checkout-form-title">Способ получения</h2>
+              <label class="radio-wrapper radio-wrapper--checkout"><input type="radio" name="delivery"> <span class="radio"></span> <span class="radio-text">Доставка курьером</span></label>
+              <label class="radio-wrapper radio-wrapper--checkout"><input type="radio" name="delivery"> <span class="radio"></span> <span class="radio-text">СДЭК курьер</span></label>
+              </div>
+              <div class="checkout-form-block">
+                <h2 class="checkout-form-title">Адрес доставки</h2>
+                <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                  <input type="text" class="input-ph" required>
+                  <span class="input-ph-text">Улица</span>
+                </label>
+                <div class="row checkout-form-block-row">
+                  <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                    <input type="text" class="input-ph" required>
+                    <span class="input-ph-text">Дом</span>
+                  </label>
+                  <label class="input-ph-wrapper input-ph-wrapper--checkout">
+                    <input type="text" class="input-ph" required>
+                    <span class="input-ph-text">Квартира/офис</span>
+                  </label>
+                </div>
+              </div>
+              <div class="checkout-form-block">
+                <h2 class="checkout-form-title">Варианты оплаты</h2>
+                <label class="radio-wrapper radio-wrapper--checkout"><input type="radio" name="paymant" checked> <span class="radio"></span> <span class="radio-text">Банковской картой на сайте</span> <p class="radio-text radio-text--accent-chackout radio-text--accent">Дополнительная скидка 3%</p></label>
+                <label class="radio-wrapper radio-wrapper--checkout"><input type="radio" name="paymant"> <span class="radio"></span> <span class="radio-text">Оплата курьеру банковской картой</span></label>
+                <label class="radio-wrapper radio-wrapper--checkout"><input type="radio" name="paymant"> <span class="radio"></span> <span class="radio-text">Оплата курьеру наличными</span></label>
+              </div>
+              <div class="checkout-form-block">
+                <h2 class="checkout-form-title">Комментарий</h2>
+                <textarea class="text-area-base text-area-base--checkout" name="comments"></textarea>
+                <label class="checkbox-wrapper checkbox-wrapper--checkout">
+                  <input type="checkbox" name="gift">
+                   <span class="checkbox"></span>
+                    <span>
+                      <p class="radio-text">Купить в подарок</p>
+                      <p class="radio-text radio-text--small">- упакуем в праздничную упаковку; <br> - не станем класть документы;</p>
+                      <p><a href="#" class="link-accent link-accent--gift">подробнее</a></p>
+                    </span>
+                </label>
+              </div>
+            </div>
+            <div class="checkout-form-col">
+              <aside class="checkout-form-sidebar">
+                <div class="checkout-form-sidebar-cost">
+                  <span class="checkout-cost-title">Стоимость покупок</span>
+                  <span class="checkout-cost">10 910 ₽</span>
+                </div>
+                <div class="checkout-form-sidebar-cost">
+                  <span class="checkout-cost-title">Доставка</span>
+                  <span class="checkout-cost">0 ₽</span>
+                </div>
+                <div class="checkout-form-sidebar-cost checkout-form-sidebar-cost--total">
+                  <span class="checkout-cost-title">Итого</span>
+                  <span class="checkout-cost">0 ₽</span>
+                </div>
+                <div class="checkout-form-sidebar-btns-block">
+                  <label class="checkbox-wrapper checkbox-wrapper--checkout">
+                    <input type="checkbox">
+                     <span class="checkbox"></span>
+                      <span>
+                        <p class="radio-text">раньше всех получать скидки и подарки от SKINBUTIK</p>
+                      </span>
+                  </label>
+
+                  <label class="checkbox-wrapper checkbox-wrapper--checkout">
+                    <input type="checkbox">
+                     <span class="checkbox"></span>
+                      <span>
+                        <p class="radio-text">принимаю <a class="link-accent" href="#">условия обработки персональных данных</a></p>
+                      </span>
+                  </label>
+
+                  <button class="btn-white btn-white--accent btn-white--checkout">
+                    Подтвердить заказ
+                  </button>
+                </div>
+              </aside>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    @@include('../includes/footer.html')
+  </body>
+<script src="js/app.min.js"></script>
+</body>
+</html>

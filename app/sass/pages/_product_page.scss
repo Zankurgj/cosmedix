@@ -1,0 +1,336 @@
+.product-card-col {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.product-card-slider-wrapper {
+  position: relative;
+  padding-left: 90px;
+  .slick-dots {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    cursor: pointer;
+  }
+}
+.product-slider-pagin {
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+.product-card-slide {
+  &:focus {
+    outline: none;
+  }
+}
+.product-card-name {
+  font-size: 2.2rem;
+  line-height: 4.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: #25272b;
+}
+.product-card-cost {
+  font-family: 'Whitney';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0 0 7px 0;
+  color: #25272b;
+}
+.product-card-stars {
+  display: flex;
+  color: #879da4;
+  .fa-star {
+    margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.product-card-subtitle {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  line-height: 4.2rem;
+  font-weight: 200;
+  text-transform: none;
+  color: #25272b;
+}
+
+.item-counter-input {
+  font-family: 'Helvetica Neue', Verdana, Arial, sans-serif;
+  color: #636363;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  &:focus {
+    outline: none;
+  }
+  &:read-only {
+    cursor: default;
+  }
+}
+.product-card-about {
+  display: flex;
+  align-items: center;
+}
+.product-card-counter {
+  display: flex;
+  align-items: center;
+}
+.btn-item-counter {
+  font-size: 2.5rem;
+  color: #939cac;
+}
+.btn-item-counter--minus {
+  &::before {
+    content: '\e92d';
+  }
+}
+.btn-item-counter--plus {
+  &::before {
+    content: '\e936';
+  }
+}
+.product-card-title {
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 13px;
+}
+.product-card-counter-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.product-card-size-block {
+  margin-right: 30px;
+}
+.tabs-title-block {
+  margin-bottom: 54px;
+}
+.tabs-title-item-text {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  padding: 25px 10px 17px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #25272b;
+  cursor: pointer;
+  border-bottom: solid 7px transparent;
+  transition: border-color $base-duration $base-timing;
+}
+.tabs-title-item-wrapper {
+  display: flex;
+  label {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .tabs-block-item-input {
+    &:checked {
+      & + .tabs-title-item-text {
+        border-bottom-color: #939cac;
+      }
+    }
+  }
+}
+.tabs-product-block {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.tabs-product-item {
+  width: 100%;
+  display: none;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 200;
+  &.active {
+    display: flex;
+  }
+}
+.tabs-product-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.tabs-product-text {
+  margin-bottom: 1em;
+}
+.tabs-product-item-col,
+.application-col,
+.ingredients-col {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.tabs-product-item--text {
+  padding: 20px 55px 20px 90px;
+}
+.tabs-product-item--center {
+  display: flex;
+  align-items: center;
+}
+.tabs-product-item-features-block,
+.row--application,
+.row--ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 936px;
+  margin: 0 auto 75px;
+}
+.tabs-product-item-features-col {
+  flex-basis: calc(100% / 3);
+  max-width: calc(100% / 3);
+  &:nth-child(3n-2) {
+    .tabs-product-item-features {
+      border-left: 1px solid #e6e6e6;
+    }
+  }
+  &:nth-child(-n + 3) {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+.tabs-product-item-features {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.tabs-product-item-features-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+.tabs-product-item-features-img {
+  display: block;
+  max-width: 45px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+.tabs-product-item-features-text {
+  text-align: center;
+}
+
+.application-item-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.application-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.application-item--1 {
+  color: #fff;
+  background-color: #000;
+}
+.application-title {
+  font-family: Whitney;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+.application-text {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 200;
+  margin: 0 auto;
+  width: 74%;
+}
+.application-item--2 {
+  color: #25272b;
+  border: 1px solid #e6e6e6;
+}
+.application-item-img {
+  display: block;
+  max-width: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ingredients-item--text {
+  padding: 40px;
+}
+.promo-product-slide-img-wrapper {
+  width: 100%;
+}
+.promo-product-slide {
+  display: block;
+  &:hover {
+    .promo-product-slide-name {
+      text-decoration: underline;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.promo-product-slide-img {
+  display: block;
+  width: 100%;
+}
+.promo-product-slide-cost {
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.promo-product-slide-name {
+  font-size: 12px;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+.promo-product-slider-wrapper {
+  position: relative;
+  margin-bottom: 100px;
+}
+.promo-product-slider-title {
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+}

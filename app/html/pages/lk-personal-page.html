@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    @@include('../includes/header.html')
+    <div class="body">
+      <div class="page persanal-page">
+        <div class="container">
+          <ul class="breadcrumbs breadcrumbs--lk">
+            <li>
+              <a href="#" class="breadcrumbs-item">Back</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Мой кабинет</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Персональные данные</span
+              >
+            </li>
+          </ul>
+          <div class="row row--persanal">
+            <aside class="persanal-link-block">
+              <a href="#" class="persanal-link-item active">Личные данные</a>
+              <a href="#" class="persanal-link-item">Мои заказы</a>
+            </aside>
+            <section class="persanal-data-block">
+              <div class="persanal-data-form">
+                <h1 class="h1-title persanal-data-title">Личные данные</h1>
+                <label class="input-ph-wrapper input-ph-wrapper--lk">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">ФИО</span>
+                </label>
+                <label class="input-ph-wrapper input-ph-wrapper--lk">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Дата рождения</span>
+                </label>
+                <label class="input-ph-wrapper input-ph-wrapper--lk">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">e-mail</span>
+                </label>
+                <label class="input-ph-wrapper input-ph-wrapper--lk">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Телефон</span>
+                </label>
+                <label
+                  class="input-ph-wrapper input-ph-wrapper--hide input-ph-wrapper--lk"
+                >
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Новый пароль</span>
+                </label>
+                <label
+                  class="input-ph-wrapper input-ph-wrapper--hide input-ph-wrapper--lk"
+                >
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Повторите новый пароль</span>
+                </label>
+                <button
+                  type="submit"
+                  class="btn--simple btn--simple-hover btn--lk-submit"
+                >
+                  Сохранить
+                </button>
+                <button
+                  class="btn-white btn--lk-pwd"
+                  onclick="toggleHideInput(this)"
+                >
+                  Сменить пароль
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('../includes/footer.html')
+    <script src="js/app.min.js"></script>
+    <script>
+      function toggleHideInput(btn) {
+        const allhideInput = document.querySelectorAll(
+          '.input-ph-wrapper--hide'
+        );
+        btn.classList.toggle('active');
+        for (const hideInput of allhideInput) {
+          hideInput.classList.toggle('input-ph-wrapper--show');
+        }
+      }
+    </script>
+  </body>
+</html>
