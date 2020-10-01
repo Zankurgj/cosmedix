@@ -1,20 +1,52 @@
-.professional-nav {
+.row--professional {
+  @media screen and (max-width: $mobile-bp) {
+    flex-wrap: wrap;
+  }
+}
+.professional-nav-block {
   min-width: 240px;
   flex-basis: 240px;
   padding-right: 20px;
   padding-top: 8px;
+  @media screen and (max-width: $mobile-bp) {
+    min-width: 100%;
+    flex-basis: 100%;
+    padding: 0;
+  }
+}
+.professional-nav {
+  @media screen and (max-width: $mobile-bp) {
+    display: none;
+  }
 }
 .container--professional {
   max-width: 956px;
-  padding-top: 46px;
-  padding-bottom: 100px;
 }
 .professional-nav-title {
+  position: relative;
+  display: inline-block;
   border-bottom: 4px solid #f1f3f6;
   font-size: 1.8rem;
   letter-spacing: 0.15rem;
-  display: inline-block;
   margin-bottom: 20px;
+  @media screen and (max-width: $mobile-bp) {
+    padding-right: 30px;
+    &::before {
+      content: '\e904';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-family: 'Icomoon';
+      color: #25272b;
+      transform: translateY(-50%) rotate(-90deg);
+      transition: transform $base-duration $base-timing;
+    }
+    &.opened {
+      &::before {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
+  }
 }
 .professional-nav-item {
   display: block;
@@ -25,16 +57,33 @@
 }
 .h1-title--professional {
   margin-bottom: 20px;
+  @media screen and (max-width: $mobile-bp) {
+    line-height: 1.2;
+  }
 }
 .professional-btn-block {
   display: flex;
   margin-bottom: 20px;
+  @media screen and (max-width: $mobile-bp) {
+    flex-direction: column;
+  }
 }
 .img--professional {
   margin-bottom: 20px;
 }
-.btn--professional {
+.btn--professional--link {
   margin-right: 20px;
+  @media screen and (max-width: $mobile-bp) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.btn--professional {
+  @media screen and (max-width: $mobile-bp) {
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
 }
 .simple-text--professional {
   margin-bottom: 20px;

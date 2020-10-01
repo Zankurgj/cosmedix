@@ -583,18 +583,20 @@
       <span class="input-ph-text">Имя</span>
     </label>
     <div class="popup-radio-wrapper">
-      <span class="popup-radio-title">Пол</span>
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">женский</span>
-      </label>
+      <span class="popup-radio-title">Пол:</span>
+      <div class="popup-radio-group">
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">женский</span>
+        </label>
 
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">мужской</span>
-      </label>
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">мужской</span>
+        </label>
+      </div>
     </div>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
@@ -617,7 +619,9 @@
         <p class="radio-text">принимаю условия обработки персональных</p>
       </span>
     </label>
-    <button class="btn-pink btn-pink--popup-submit">Отправить</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Отправить
+    </button>
   </form>
 </section>
 </div>
@@ -637,27 +641,29 @@
   </div>
   <form action="">
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">Имя</span>
     </label>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">E-mail</span>
     </label>
 
-    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Войти
+    </button>
 
     <div class="popup-btns-wrapper">
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('recoveryPopup')"
       >
         забыли пароль?
       </button>
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('signupPopup')"
       >
@@ -717,27 +723,25 @@
               <span> / </span>
             </li>
             <li>
-              <a href="#" class="breadcrumbs-item">Skincare</a>
-              <span> / </span>
-            </li>
-            <li>
-              <a href="#" class="breadcrumbs-item">Shop</a>
-              <span> / </span>
-            </li>
-            <li>
-              <span class="breadcrumbs-item breadcrumbs-item--last"
-                >Eye Genius</span
-              >
+              <span class="breadcrumbs-item breadcrumbs-item--last">Shop</span>
             </li>
           </ul>
           <section class="catalog-promo">
-            <img src="./images/dest/img/catalog-promo.jpg" alt="Промо" />
+            <img
+              data-srcset="./images/dest/img/catalog-promo-m.jpg 750w, 
+              ./images/dest/img/catalog-promo.jpg 751w"
+              class="lazyload"
+              alt="Промо"
+            />
           </section>
           <section class="catalog-product">
             <div class="row row--wrap">
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon"><span>new</span></div>
                     <div class="product-item-img-wrapper">
                       <img
@@ -753,7 +757,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -764,14 +770,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -789,7 +800,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -800,14 +813,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -825,7 +843,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -836,14 +856,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -861,7 +886,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -872,14 +899,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -897,7 +929,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -908,14 +942,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -933,7 +972,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -944,14 +985,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -969,7 +1015,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -980,14 +1028,19 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>
 
               <div class="product-item-col">
                 <div class="product-item">
-                  <a href="#" class="product-item-img-container">
+                  <a
+                    href="./product-page.html"
+                    class="product-item-img-container"
+                  >
                     <div class="product-item-hexagon">
                       <span>AWARD WINNER</span>
                     </div>
@@ -1005,7 +1058,9 @@
                       />
                     </div>
                   </a>
-                  <a href="#" class="product-item-name">CORRECT</a>
+                  <a href="./product-page.html" class="product-item-name"
+                    >CORRECT</a
+                  >
                   <p class="product-item-subtitle">
                     RAPID RELIEF ACNE TREATMENT
                   </p>
@@ -1016,7 +1071,9 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star-half-o" aria-hidden="true"></i>
                   </div>
-                  <a href="#" class="product-item-text">12 Reviews</a>
+                  <a href="./product-page.html" class="product-item-text"
+                    >12 Reviews</a
+                  >
                   <p class="product-item-price">$37.00</p>
                 </div>
               </div>

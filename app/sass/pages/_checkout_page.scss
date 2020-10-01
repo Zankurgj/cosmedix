@@ -2,7 +2,10 @@
   margin-bottom: 30px;
 }
 .container--chekout {
-  padding-bottom: 60px;
+  padding: 0 60px 60px 60px;
+  @media screen and (max-width: $mobile-bp) {
+    padding: 30px 4vw;
+  }
 }
 .checkout-form-col {
   flex-basis: calc(50% - 25px);
@@ -10,16 +13,29 @@
   &:first-child {
     margin-right: 50px;
   }
+  @media screen and (max-width: $mobile-bp) {
+    flex-basis: 100%;
+    max-width: 100%;
+    &:first-child {
+      margin-right: 0;
+    }
+  }
 }
 .checkout-form {
   display: flex;
   max-width: 700px;
   margin: 0 auto;
+  @media screen and (max-width: $mobile-bp) {
+    flex-wrap: wrap;
+  }
 }
 .checkout-title {
   font-weight: normal;
   text-align: center;
   margin-bottom: 30px;
+  @media screen and (max-width: $mobile-bp) {
+    line-height: 1.1;
+  }
 }
 .checkout-auth-msg {
   max-width: 700px;
@@ -83,6 +99,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   font-size: 18px;
+  font-weight: 400;
 }
 .checkout-cost-title {
   color: #4a4a4a;
@@ -96,7 +113,7 @@
     margin-bottom: 10px;
   }
 }
-.btn-white--checkout {
+.btn--simple--checkout {
   width: 100%;
   margin-top: 15px;
   border: 1px solid transparent;

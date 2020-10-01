@@ -12,11 +12,37 @@
     @@include('../includes/header.html')
     <div class="body">
       <div class="page professional-page">
-        <div class="container container--professional">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#" class="breadcrumbs-item">Back</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Мой кабинет</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Персональные данные</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container container--professional block-content">
           <div class="row row--professional">
-            <aside class="professional-nav">
-              <h2 class="professional-nav-title">THE COMPANY</h2>
-              <nav class="professional-nav">
+            <aside class="professional-nav-block">
+              <button
+                class="professional-nav-title"
+                onclick="onToggleProfDropDown(this)"
+              >
+                THE COMPANY
+              </button>
+              <nav class="professional-nav js-dropdown-prof">
                 <a href="./contacts-page.html" class="professional-nav-item"
                   >Контакты</a
                 >
@@ -36,11 +62,11 @@
               <div class="professional-btn-block">
                 <a
                   href="#professional-form"
-                  class="btn--simple btn--simple-hover btn--professional"
+                  class="btn--simple btn--simple-hover btn--professional btn--professional--link"
                   >Become a Professional</a
                 >
                 <button
-                  class="btn-white"
+                  class="btn-white btn--professional"
                   onclick="onTogglePopUp('signinPopup')"
                 >
                   sign in as a professional
@@ -83,8 +109,8 @@
                     blocks for cell rejuvenation and skin restoration.
                   </li>
                   <li>
-                    <strong>CHIRAL CORRECTION</strong>creates a partnership with
-                    the skin to reduce irritation ensuring desired results
+                    <strong>CHIRAL CORRECTION</strong> creates a partnership
+                    with the skin to reduce irritation ensuring desired results
                   </li>
                 </ul>
               </div>

@@ -583,18 +583,20 @@
       <span class="input-ph-text">Имя</span>
     </label>
     <div class="popup-radio-wrapper">
-      <span class="popup-radio-title">Пол</span>
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">женский</span>
-      </label>
+      <span class="popup-radio-title">Пол:</span>
+      <div class="popup-radio-group">
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">женский</span>
+        </label>
 
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">мужской</span>
-      </label>
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">мужской</span>
+        </label>
+      </div>
     </div>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
@@ -617,7 +619,9 @@
         <p class="radio-text">принимаю условия обработки персональных</p>
       </span>
     </label>
-    <button class="btn-pink btn-pink--popup-submit">Отправить</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Отправить
+    </button>
   </form>
 </section>
 </div>
@@ -637,27 +641,29 @@
   </div>
   <form action="">
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">Имя</span>
     </label>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">E-mail</span>
     </label>
 
-    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Войти
+    </button>
 
     <div class="popup-btns-wrapper">
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('recoveryPopup')"
       >
         забыли пароль?
       </button>
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('signupPopup')"
       >
@@ -713,14 +719,11 @@
         <div class="container">
           <a href="#" class="main-promo main-promo--img">
             <img
-              src="./images/dest/img/promoM.jpg"
+              data-srcset="./images/dest/img/promoM.jpg 750w, 
+              ./images/dest/img/promoD.jpg 751w"
+              class="lazyload"
               alt="Продукт"
-              class="main-promo-img main-promo-img--mobile"
-            />
-            <img
-              src="./images/dest/img/promoD.jpg"
-              alt="Продукт"
-              class="main-promo-img main-promo-img--desktop"
+              class="main-promo-img"
             />
           </a>
           <section class="main-promo main-promo--text">
@@ -743,16 +746,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns1-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns1-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns1-m.jpg 750w, 
+              ./images/dest/img/concerns1-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -761,16 +762,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns2-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns2-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns2-m.jpg 750w, 
+              ./images/dest/img/concerns2-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -778,16 +777,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns1-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns1-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns1-m.jpg 750w, 
+              ./images/dest/img/concerns1-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -796,16 +793,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns2-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns2-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns2-m.jpg 750w, 
+              ./images/dest/img/concerns2-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -1119,7 +1114,11 @@
               </div>
             </div>
             <div class="main-features-img-block">
-              <img src="./images/dest/img/features2.jpg" alt="Продукт" />
+              <img
+                data-srcset="./images/dest/img/features2M.jpg 750w, ./images/dest/img/features2.jpg 751w"
+                class="lazyload"
+                alt="Продукт"
+              />
             </div>
             <div class="row">
               <div

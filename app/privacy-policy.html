@@ -583,18 +583,20 @@
       <span class="input-ph-text">Имя</span>
     </label>
     <div class="popup-radio-wrapper">
-      <span class="popup-radio-title">Пол</span>
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">женский</span>
-      </label>
+      <span class="popup-radio-title">Пол:</span>
+      <div class="popup-radio-group">
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">женский</span>
+        </label>
 
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">мужской</span>
-      </label>
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">мужской</span>
+        </label>
+      </div>
     </div>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
@@ -617,7 +619,9 @@
         <p class="radio-text">принимаю условия обработки персональных</p>
       </span>
     </label>
-    <button class="btn-pink btn-pink--popup-submit">Отправить</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Отправить
+    </button>
   </form>
 </section>
 </div>
@@ -637,27 +641,29 @@
   </div>
   <form action="">
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">Имя</span>
     </label>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">E-mail</span>
     </label>
 
-    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Войти
+    </button>
 
     <div class="popup-btns-wrapper">
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('recoveryPopup')"
       >
         забыли пароль?
       </button>
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('signupPopup')"
       >
@@ -727,7 +733,7 @@
             </li>
           </ul>
         </div>
-        <div class="container container--contacts">
+        <div class="container container--contacts block-content">
           <h1 class="h1-title h1-title--contacts">Политика приватности</h1>
           <div class="simple-text simple-text--contacts">
             <ol>

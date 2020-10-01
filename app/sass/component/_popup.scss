@@ -27,13 +27,17 @@
   flex: 0 0 auto;
   z-index: 13;
   margin: auto;
-  padding: 50px 0;
+  padding: 65px 5px 50px 5px;
+  max-width: 100%;
 }
 .popup-container {
   width: 100%;
   max-width: 480px;
   padding: 80px;
   background-color: #fff;
+  @media screen and (max-width: $mobile-bp) {
+    padding: 20px;
+  }
 }
 .popup-overlay {
   position: fixed;
@@ -47,6 +51,10 @@
   margin-bottom: 16px;
   font-size: 48px;
   text-align: center;
+  @media screen and (max-width: $mobile-bp) {
+    margin-bottom: 6px;
+    font-size: 38px;
+  }
 }
 .popup-text {
 }
@@ -57,6 +65,9 @@
   margin-bottom: 10px;
   text-align: center;
   color: #4a4a4a;
+  @media screen and (max-width: $mobile-bp) {
+    margin-bottom: 0;
+  }
 }
 .input-ph-wrapper--popup {
   margin-bottom: 30px;
@@ -64,12 +75,18 @@
 .popup-radio-wrapper {
   display: flex;
   margin-bottom: 30px;
+  @media screen and (max-width: $mobile-bp) {
+    flex-wrap: wrap;
+  }
 }
 .radio-wrapper--popup {
   margin-right: 20px;
 }
 .checkbox-wrapper--popup {
   margin-bottom: 20px;
+}
+.popup-radio-group {
+  display: flex;
 }
 .popup-radio-title {
   margin-right: 15px;
@@ -117,6 +134,7 @@
   background-position: center;
   background-size: 24px auto;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' id='icon_close_24'%3E%3Ctitle%3Eicon_close_24%3C/title%3E%3Cpath fill='%23000000' d='M17.15 17.85L12 12.71l-5.15 5.14-.7-.7L11.29 12 6.15 6.85l.7-.7L12 11.29l5.15-5.14.7.7L12.71 12l5.14 5.15-.7.7'%3E%3C/path%3E%3C/svg%3E");
+  z-index: 15;
   &:hover {
     opacity: 0.8;
   }

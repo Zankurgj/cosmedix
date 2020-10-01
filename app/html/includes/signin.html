@@ -7,27 +7,29 @@
   </div>
   <form action="">
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">Имя</span>
     </label>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">E-mail</span>
     </label>
 
-    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Войти
+    </button>
 
     <div class="popup-btns-wrapper">
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('recoveryPopup')"
       >
         забыли пароль?
       </button>
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('signupPopup')"
       >

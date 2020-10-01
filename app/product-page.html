@@ -583,18 +583,20 @@
       <span class="input-ph-text">Имя</span>
     </label>
     <div class="popup-radio-wrapper">
-      <span class="popup-radio-title">Пол</span>
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">женский</span>
-      </label>
+      <span class="popup-radio-title">Пол:</span>
+      <div class="popup-radio-group">
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">женский</span>
+        </label>
 
-      <label class="radio-wrapper radio-wrapper--popup">
-        <input type="radio" name="gender" />
-        <span class="radio"></span>
-        <span class="radio-text radio-text--popup">мужской</span>
-      </label>
+        <label class="radio-wrapper radio-wrapper--popup">
+          <input type="radio" name="gender" />
+          <span class="radio"></span>
+          <span class="radio-text radio-text--popup">мужской</span>
+        </label>
+      </div>
     </div>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
@@ -617,7 +619,9 @@
         <p class="radio-text">принимаю условия обработки персональных</p>
       </span>
     </label>
-    <button class="btn-pink btn-pink--popup-submit">Отправить</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Отправить
+    </button>
   </form>
 </section>
 </div>
@@ -637,27 +641,29 @@
   </div>
   <form action="">
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">Имя</span>
     </label>
 
     <label class="input-ph-wrapper input-ph-wrapper--popup">
-      <input type="text" class="input-ph" required />
+      <input type="text" class="input-ph input-ph--popup" required />
       <span class="input-ph-text">E-mail</span>
     </label>
 
-    <button class="btn-pink btn-pink--popup-submit">Войти</button>
+    <button class="btn--simple btn--simple-hover btn-pink--popup-submit">
+      Войти
+    </button>
 
     <div class="popup-btns-wrapper">
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('recoveryPopup')"
       >
         забыли пароль?
       </button>
       <button
-        class="btn-link"
+        class="btn-link btn-link--popup"
         type="button"
         onclick="onChangePopup('signupPopup')"
       >
@@ -711,7 +717,7 @@
     <div class="body">
       <div class="page">
         <div class="container">
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs breadcrumbs--product-page">
             <li>
               <a href="#" class="breadcrumbs-item">Home</a>
               <span> / </span>
@@ -736,7 +742,7 @@
           </ul>
 
           <section class="product-card">
-            <div class="row">
+            <div class="row row--product-card">
               <div class="product-card-col">
                 <div class="product-card-slider-wrapper">
                   <div class="product-card-slider" id="productCardSlider">
@@ -749,7 +755,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product-card-col">
+              <div class="product-card-col product-card-col--text">
                 <h2 class="product-card-name">PURITY SOLUTION</h2>
                 <p class="product-card-cost">$35.00</p>
                 <div class="product-card-stars">
@@ -778,7 +784,7 @@
                     <span class="product-card-title">3.3 fl oz / 100 ml
                     </span>
                   </div>
-                  <button class="btn--simple btn--simple-hover" onclick="onToogleBasket()">Add to Bag</button>
+                  <button class="btn--simple btn--simple-hover btn--product-card" onclick="onToogleBasket()">Add to Bag</button>
                 </div>
               </div>
             </div>
@@ -836,104 +842,118 @@
             </div>  
             <div class="tabs-product-block">
               <div class="tabs-product-item active" data-tab-type="product" id="product1">
-                <div class="tabs-product-item-col tabs-product-item--text">
-                  <p class="tabs-product-title">WHAT IT IS:</p>
-                <p class="tabs-product-text">Purity Solution Nourishing Deep Cleansing Oil is a two-in-one makeup remover and cleanser with a nutrient-rich blend of radiance-boosting oils that gently melt away dirt, oil, makeup and impurities for a hydrated, healthy-looking glow.</p>
-                <p class="tabs-product-title">WHAT IT DOES:</p>
-                <p class="tabs-product-text">• Removes makeup and impurities without stripping skin of natural moisture <br>
-                  • Helps to purify skin for a smoother-looking complexion <br>
-                  • Aids in nourishing the complexion with radiance-boosting vitamins</p>
-                  <p class="tabs-product-text">Skin that feels healthier and more hydrated after cleansing? That’s unheard of—until now. Formulated with a nutrient-rich blend of olive, moringa, kukui, safflower, sesame and argan oils, Purity Solution Nourishing Deep Cleansing Oil works to gently break down dirt, excess oil, long-wear makeup and sunscreen, rinsing completely clean with water and leaving skin feeling soft, supple, hydrated and healthy-looking—never tight or greasy. Gentle enough to use even on the eye and lip area, this multitasking cleansing oil nourishes the skin with nutrients as it aids in purifying the complexion—making it the perfect solution for completely cleansing skin daily without stripping away essential moisture.</p>
-                </div>
-                <div class="tabs-product-item-col tabs-product-item--img tabs-product-item--center">
-                  <img class="img-response" src="./images/dest/img/product-tab-img.jpg" alt="Продукт">
+                <button class="tabs-product-title-btn" onclick="onToggleProductSpoiler(this)">WHY IT WORKS</button>
+                <div class="tabs-product-item-inner js-product-tab">
+                  <div class="tabs-product-item-col tabs-product-item--text">
+                    <p class="tabs-product-title">WHAT IT IS:</p>
+                  <p class="tabs-product-text">Purity Solution Nourishing Deep Cleansing Oil is a two-in-one makeup remover and cleanser with a nutrient-rich blend of radiance-boosting oils that gently melt away dirt, oil, makeup and impurities for a hydrated, healthy-looking glow.</p>
+                  <p class="tabs-product-title">WHAT IT DOES:</p>
+                  <p class="tabs-product-text">• Removes makeup and impurities without stripping skin of natural moisture <br>
+                    • Helps to purify skin for a smoother-looking complexion <br>
+                    • Aids in nourishing the complexion with radiance-boosting vitamins</p>
+                    <p class="tabs-product-text">Skin that feels healthier and more hydrated after cleansing? That’s unheard of—until now. Formulated with a nutrient-rich blend of olive, moringa, kukui, safflower, sesame and argan oils, Purity Solution Nourishing Deep Cleansing Oil works to gently break down dirt, excess oil, long-wear makeup and sunscreen, rinsing completely clean with water and leaving skin feeling soft, supple, hydrated and healthy-looking—never tight or greasy. Gentle enough to use even on the eye and lip area, this multitasking cleansing oil nourishes the skin with nutrients as it aids in purifying the complexion—making it the perfect solution for completely cleansing skin daily without stripping away essential moisture.</p>
+                  </div>
+                  <div class="tabs-product-item-col tabs-product-item--img tabs-product-item--center">
+                    <img class="img-response" src="./images/dest/img/product-tab-img.jpg" alt="Продукт">
+                  </div>
                 </div>
               </div>
+
               <div class="tabs-product-item" data-tab-type="product" id="product2">
-                <div class="tabs-product-item-features-block">
-                  <div class="tabs-product-item-features-col">
-                    <div class="tabs-product-item-features">
-                      <div class="tabs-product-item-features-inner">
-                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
-                      <p class="tabs-product-item-features-text">
-                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
-                      </p>
+                <button class="tabs-product-title-btn" onclick="onToggleProductSpoiler(this)">Benefits</button>
+                <div class="tabs-product-item-inner js-product-tab">
+                  <div class="tabs-product-item-features-block">
+                    <div class="tabs-product-item-features-col">
+                      <div class="tabs-product-item-features">
+                        <div class="tabs-product-item-features-inner">
+                          <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                        <p class="tabs-product-item-features-text">
+                          A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                        </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="tabs-product-item-features-col">
-                    <div class="tabs-product-item-features">
-                      <div class="tabs-product-item-features-inner">
-                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
-                      <p class="tabs-product-item-features-text">
-                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
-                      </p>
+  
+                    <div class="tabs-product-item-features-col">
+                      <div class="tabs-product-item-features">
+                        <div class="tabs-product-item-features-inner">
+                          <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                        <p class="tabs-product-item-features-text">
+                          A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                        </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="tabs-product-item-features-col">
-                    <div class="tabs-product-item-features">
-                      <div class="tabs-product-item-features-inner">
-                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
-                      <p class="tabs-product-item-features-text">
-                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
-                      </p>
+  
+                    <div class="tabs-product-item-features-col">
+                      <div class="tabs-product-item-features">
+                        <div class="tabs-product-item-features-inner">
+                          <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                        <p class="tabs-product-item-features-text">
+                          A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                        </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="tabs-product-item-features-col">
-                    <div class="tabs-product-item-features">
-                      <div class="tabs-product-item-features-inner">
-                        <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
-                      <p class="tabs-product-item-features-text">
-                        A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
-                      </p>
+  
+                    <div class="tabs-product-item-features-col">
+                      <div class="tabs-product-item-features">
+                        <div class="tabs-product-item-features-inner">
+                          <img class="tabs-product-item-features-img" src="./images/dest/img/tabs-feature.jpg" alt="особенности">
+                        <p class="tabs-product-item-features-text">
+                          A combination of science and botanical ingredients help firm skin and smooth lines and wrinkles.
+                        </p>
+                        </div>
                       </div>
                     </div>
+  
                   </div>
-
                 </div>
               </div>
               <div class="tabs-product-item" data-tab-type="product" id="product3">
-                <div class="row row--application">
-                  <div class="application-col">
-                    <div class="application-item-inner">
-                      <div class="application-item application-item--1">
-                        <img class="application-item-img" src="./images/dest/img/application1.svg" alt="особенности">
-                         <p class="application-title">Night</p>
-                         <p class="application-text">At night, shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Benefit Clean for normal to dry skin or Purity Clean for normal, combo or oily skin.</p>
+                <button class="tabs-product-title-btn" onclick="onToggleProductSpoiler(this)">Application</button>
+                <div class="tabs-product-item-inner js-product-tab">
+                  <div class="row row--application">
+                    <div class="application-col">
+                      <div class="application-item-inner">
+                        <div class="application-item application-item--1">
+                          <img class="application-item-img" src="./images/dest/img/application1.svg" alt="особенности">
+                           <p class="application-title">Night</p>
+                           <p class="application-text">At night, shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Benefit Clean for normal to dry skin or Purity Clean for normal, combo or oily skin.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="application-col">
-                    <div class="application-item-inner">
-                      <div class="application-item application-item--2">
-                        <img class="application-item-img" src="./images/dest/img/application2.svg" alt="особенности">
-                        <p class="application-title">Day</p>
-                         <p class="application-text">Shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Shineless or Mystic for oily, acne-prone or combination skin—Emulsion or Humidify for normal to dry skin.</p>
+                    <div class="application-col">
+                      <div class="application-item-inner">
+                        <div class="application-item application-item--2">
+                          <img class="application-item-img" src="./images/dest/img/application2.svg" alt="особенности">
+                          <p class="application-title">Day</p>
+                           <p class="application-text">Shake well before use and gently massage a quarter-sized amount onto dry skin with dry hands. Emulsify with water and rinse clean. Follow with Shineless or Mystic for oily, acne-prone or combination skin—Emulsion or Humidify for normal to dry skin.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="tabs-product-item" data-tab-type="product" id="product4">
-                 <div class="row">
-                  <div class="ingredients-col">
-                    <div class="ingredients-item">
-                      <img class="ingredients-item-img img-response" src="./images/dest/img/ingredients.jpg" alt="ингредиенты">
-                    </div>
-                  </div> 
 
-                  <div class="ingredients-col">
-                    <div class="ingredients-item ingredients-item--text">
-                      <p class="tabs-product-title">All Ingredients</p>
-                      <p class="tabs-product-text">OLEA EUROPAEA (OLIVE) FRUIT OIL, CAPRYLIC/CAPRIC TRIGLYCERIDE, SORBETH-30 TETRAOLEATE, MORINGA OLEIFERA (PTERYGOSPERMA) SEED OIL, ALEURITES MOLUCCANA (KUKUI) SEED OIL, ARGANIA SPINOSA KERNEL (ARGAN) OIL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, SESAMUM INDICUM (SESAME) SEED OIL, GLYCINE SOJA (SOYBEAN) OIL, TOCOPHERYL ACETATE (VITAMIN E), RETINYL PALMITATE, MELIA AZADIRACHTA (NEEM) LEAF EXTRACT, MELIA AZADIRACHTA (NEEM) FLOWER EXTRACT, AMBER POWDER, CORALLINA OFFICIANLIS EXTRACT, COCCINIA INDICA FRUIT EXTRACT, SOLANUM MELONGENA (EGGPLANT) FRUIT EXTRACT, CURCUMA LONGA (TURMERIC) LEAF EXTRACT, OCIMUM SANCTUM LEAF EXTRACT, CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL, ASCORBYL PALMITATE, LIMONENE, PROPANEDIOL, ETHYLHEXYLGLYCERIN, CAPRYLYL GLYCOL, CAPRYLHYDROXAMIC ACID</p>
-                    </div>
-                  </div> 
-                 </div>
+              <div class="tabs-product-item" data-tab-type="product" id="product4">
+                <button class="tabs-product-title-btn" onclick="onToggleProductSpoiler(this)">Ingredients</button>
+                <div class="tabs-product-item-inner js-product-tab">
+                  <div class="row">
+                    <div class="ingredients-col ingredients-col--img">
+                      <div class="ingredients-item">
+                        <img class="ingredients-item-img img-response" src="./images/dest/img/ingredients.jpg" alt="ингредиенты">
+                      </div>
+                    </div> 
+  
+                    <div class="ingredients-col ingredients-col--text">
+                      <div class="ingredients-item ingredients-item--text">
+                        <p class="tabs-product-title">All Ingredients</p>
+                        <p class="tabs-product-text">OLEA EUROPAEA (OLIVE) FRUIT OIL, CAPRYLIC/CAPRIC TRIGLYCERIDE, SORBETH-30 TETRAOLEATE, MORINGA OLEIFERA (PTERYGOSPERMA) SEED OIL, ALEURITES MOLUCCANA (KUKUI) SEED OIL, ARGANIA SPINOSA KERNEL (ARGAN) OIL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, SESAMUM INDICUM (SESAME) SEED OIL, GLYCINE SOJA (SOYBEAN) OIL, TOCOPHERYL ACETATE (VITAMIN E), RETINYL PALMITATE, MELIA AZADIRACHTA (NEEM) LEAF EXTRACT, MELIA AZADIRACHTA (NEEM) FLOWER EXTRACT, AMBER POWDER, CORALLINA OFFICIANLIS EXTRACT, COCCINIA INDICA FRUIT EXTRACT, SOLANUM MELONGENA (EGGPLANT) FRUIT EXTRACT, CURCUMA LONGA (TURMERIC) LEAF EXTRACT, OCIMUM SANCTUM LEAF EXTRACT, CITRUS AURANTIUM DULCIS (ORANGE) PEEL OIL, ASCORBYL PALMITATE, LIMONENE, PROPANEDIOL, ETHYLHEXYLGLYCERIN, CAPRYLYL GLYCOL, CAPRYLHYDROXAMIC ACID</p>
+                      </div>
+                    </div> 
+                   </div>
+                </div>
               </div>
             </div>
           </section>

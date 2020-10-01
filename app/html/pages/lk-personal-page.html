@@ -32,7 +32,7 @@
               >
             </li>
           </ul>
-          <div class="row row--persanal">
+          <div class="row row--persanal block-content">
             <aside class="persanal-link-block">
               <a href="#" class="persanal-link-item active">Личные данные</a>
               <a href="#" class="persanal-link-item">Мои заказы</a>
@@ -68,18 +68,20 @@
                   <input type="text" class="input-ph" required />
                   <span class="input-ph-text">Повторите новый пароль</span>
                 </label>
-                <button
-                  type="submit"
-                  class="btn--simple btn--simple-hover btn--lk-submit"
-                >
-                  Сохранить
-                </button>
-                <button
-                  class="btn-white btn--lk-pwd"
-                  onclick="toggleHideInput(this)"
-                >
-                  Сменить пароль
-                </button>
+                <div class="persanal-data-btns">
+                  <button
+                    type="submit"
+                    class="btn--simple btn--simple-hover btn--lk-submit"
+                  >
+                    Сохранить
+                  </button>
+                  <button
+                    class="btn-white btn--lk-pwd"
+                    onclick="toggleHideInput(this)"
+                  >
+                    Сменить пароль
+                  </button>
+                </div>
               </div>
             </section>
           </div>

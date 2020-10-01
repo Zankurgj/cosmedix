@@ -162,6 +162,7 @@ a {
   font-weight: 400;
   ul {
     list-style: disc;
+    margin-left: 20px;
   }
   b,
   strong {
@@ -184,4 +185,10 @@ a {
   font-style: normal;
   line-height: 1.4;
   margin-bottom: 10px;
+}
+.block-content {
+  padding: 0 60px 60px 60px;
+  @media screen and (max-width: $mobile-bp) {
+    padding: 30px 4vw;
+  }
 }

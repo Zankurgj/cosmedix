@@ -7,6 +7,13 @@
 .breadcrumbs {
   padding: 15px 27px;
   display: flex;
+  @media screen and (max-width: $mobile-bp) {
+    padding: 10px 15px;
+    display: none;
+  }
+  li {
+    white-space: nowrap;
+  }
   span {
     padding: 0 7px;
   }
@@ -29,6 +36,14 @@ a.breadcrumbs-item {
 .product-item-col {
   flex-basis: calc(100% / 3);
   max-width: calc(100% / 3);
+  @media screen and (max-width: $tablet-bp) {
+    flex-basis: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+  @media screen and (max-width: $mobile-bp) {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 .product-item {
   display: block;

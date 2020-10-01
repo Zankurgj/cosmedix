@@ -27,6 +27,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "gulp-svg-sprite": "1.5.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vanilla-lazyload": "^17.1.2"
   }
 }

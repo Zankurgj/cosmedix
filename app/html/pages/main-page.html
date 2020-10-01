@@ -15,14 +15,11 @@
         <div class="container">
           <a href="#" class="main-promo main-promo--img">
             <img
-              src="./images/dest/img/promoM.jpg"
+              data-srcset="./images/dest/img/promoM.jpg 750w, 
+              ./images/dest/img/promoD.jpg 751w"
+              class="lazyload"
               alt="Продукт"
-              class="main-promo-img main-promo-img--mobile"
-            />
-            <img
-              src="./images/dest/img/promoD.jpg"
-              alt="Продукт"
-              class="main-promo-img main-promo-img--desktop"
+              class="main-promo-img"
             />
           </a>
           <section class="main-promo main-promo--text">
@@ -45,16 +42,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns1-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns1-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns1-m.jpg 750w, 
+              ./images/dest/img/concerns1-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -63,16 +58,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns2-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns2-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns2-m.jpg 750w, 
+              ./images/dest/img/concerns2-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -80,16 +73,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns1-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns1-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns1-m.jpg 750w, 
+              ./images/dest/img/concerns1-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -98,16 +89,14 @@
               <div class="concerns-col">
                 <a href="#" class="concerns-item">
                   <div class="concerns-item-img-block">
-                    <img
-                      src="./images/dest/img/concerns2-d.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--desktop"
-                    />
-                    <img
-                      src="./images/dest/img/concerns2-m.jpg"
-                      alt="Забота"
-                      class="concerns-item-img concerns-item-img--mobile"
-                    />
+                    <div class="concerns-item-img">
+                      <img
+                        alt="Забота"
+                        data-srcset="./images/dest/img/concerns2-m.jpg 750w, 
+              ./images/dest/img/concerns2-d.jpg 751w"
+                        class="lazyload"
+                      />
+                    </div>
                   </div>
                   <p class="concerns-item-title">SHOP ACNE</p>
                 </a>
@@ -421,7 +410,11 @@
               </div>
             </div>
             <div class="main-features-img-block">
-              <img src="./images/dest/img/features2.jpg" alt="Продукт" />
+              <img
+                data-srcset="./images/dest/img/features2M.jpg 750w, ./images/dest/img/features2.jpg 751w"
+                class="lazyload"
+                alt="Продукт"
+              />
             </div>
             <div class="row">
               <div

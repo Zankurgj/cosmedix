@@ -13,7 +13,7 @@
     <div class="body">
       <div class="page">
         <div class="container container--basket">
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs breadcrumbs--basket">
             <li>
               <a href="#" class="breadcrumbs-item">Back</a>
               <span> / </span>
@@ -28,9 +28,34 @@
               >
             </li>
           </ul>
-            <div class="row row--basket basket-detail--border">
+            <div class="row row--basket block-content basket-detail--border">
               <div class="basket-item-column">
                 <h1>Корзина</h1>
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                  </div>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter1')"><span class="visually-hidden">–</span></button>
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="0" size="4" id="counter1">
+                      <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter1')"><span class="visually-hidden">+</span></button>
+                    </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
+                    <button class="basket-item-delete">
+                    
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+
                 <div class="basket-item">
                   <a href="#" class="basket-item-img">
                     <span class="basket-item-badge">
@@ -42,38 +67,17 @@
                     <p class="basket-item-brand">BABOR</p>
                     <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
                     <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
-                    <div class="basket-item-cost-inner">
-                      <p class="basket-item-cost">10 910 ₽</p>
-                      <div class="product-card-counter product-card-counter--basket">
-                        <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter1')"><span class="visually-hidden">–</span></button>
-                        <input class="item-counter-input" type="text"  value="0" size="4" id="counter1">
-                        <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter1')"><span class="visually-hidden">+</span></button>
-                      </div>
-                      <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
-                    </div>
-                    <button class="basket-item-delete">
-                      
-                      <span class="visually-hidden">Удалить</span>
-                    </button>
+                    <label class="radio-wrapper radio-wrapper--basket"><input type="radio" name="product1"> <span class="radio"></span> <span class="radio-text radio-text--basket">Очищающая Ферментная Пудра & Эссенция-Тоник с Розовой Водой (пробный образец)</span></label>
+                    <label class="radio-wrapper radio-wrapper--basket"><input type="radio" name="product1"> <span class="radio"></span> <span class="radio-text radio-text--basket">Очищающая Ферментная Пудра & Эссенция-Тоник с Розовой Водой (пробный образец)</span></label>
                   </div>
-                </div>
-
-                <div class="basket-item">
-                  <a href="#" class="basket-item-img">
-                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
-                  </a>
-                  <div class="basket-item-wrapper">
-                    <p class="basket-item-brand">ELEMIS</p>
-                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
-                    <label class="radio-wrapper radio-wrapper--basket"><input type="radio" name="product1"> <span class="radio"></span> <span class="radio-text">Очищающая Ферментная Пудра & Эссенция-Тоник с Розовой Водой (пробный образец)</span></label>
-                    <label class="radio-wrapper radio-wrapper--basket"><input type="radio" name="product1"> <span class="radio"></span> <span class="radio-text">Очищающая Ферментная Пудра & Эссенция-Тоник с Розовой Водой (пробный образец)</span></label>
-                    <div class="basket-item-cost-inner">
-                      <p class="basket-item-cost">0 ₽</p>
-                      <div class="product-card-counter product-card-counter--basket">
-                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
-                      </div>
-                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter2')"><span class="visually-hidden">–</span></button>
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="0" size="4" id="counter2">
+                      <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter2')"><span class="visually-hidden">+</span></button>
                     </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
                     <button class="basket-item-delete">
                       <span class="visually-hidden">Удалить</span>
                     </button>
@@ -82,18 +86,24 @@
 
                 <div class="basket-item">
                   <a href="#" class="basket-item-img">
+                    <span class="basket-item-badge">
+                      подарок
+                    </span>
                     <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
                   </a>
                   <div class="basket-item-wrapper">
-                    <p class="basket-item-brand">ELEMIS</p>
-                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
-                    <div class="basket-item-cost-inner">
-                      <p class="basket-item-cost">0 ₽</p>
-                      <div class="product-card-counter product-card-counter--basket">
-                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
-                      </div>
-                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                  </div>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <button class="btn-item-counter btn-item-counter--minus icomon-icon" onclick="onCounterMinus('counter3')"><span class="visually-hidden">–</span></button>
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="0" size="4" id="counter3">
+                      <button class="btn-item-counter btn-item-counter--plus icomon-icon" onclick="onCounterPlus('counter3')"><span class="visually-hidden">+</span></button>
                     </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
                     <button class="basket-item-delete">
                       <span class="visually-hidden">Удалить</span>
                     </button>
@@ -102,18 +112,22 @@
 
                 <div class="basket-item">
                   <a href="#" class="basket-item-img">
+                    <span class="basket-item-badge">
+                      подарок
+                    </span>
                     <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
                   </a>
                   <div class="basket-item-wrapper">
-                    <p class="basket-item-brand">ELEMIS</p>
-                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
-                    <div class="basket-item-cost-inner">
-                      <p class="basket-item-cost">0 ₽</p>
-                      <div class="product-card-counter product-card-counter--basket">
-                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
-                      </div>
-                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                  </div>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="1" size="4" readonly id="counter4">
                     </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
                     <button class="basket-item-delete">
                       <span class="visually-hidden">Удалить</span>
                     </button>
@@ -122,18 +136,70 @@
 
                 <div class="basket-item">
                   <a href="#" class="basket-item-img">
+                    <span class="basket-item-badge">
+                      подарок
+                    </span>
                     <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
                   </a>
                   <div class="basket-item-wrapper">
-                    <p class="basket-item-brand">ELEMIS</p>
-                    <p class="basket-item-name"><a href="#">Масло с Омега-комплексом Суперфуд (пробный образец)</a></p>
-                    <div class="basket-item-cost-inner">
-                      <p class="basket-item-cost">0 ₽</p>
-                      <div class="product-card-counter product-card-counter--basket">
-                        <input class="item-counter-input" type="text"  value="1" size="4" readonly>
-                      </div>
-                      <p class="basket-item-cost basket-item-cost--sum">0 ₽</p>
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                  </div>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="1" size="4" readonly id="counter4">
                     </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
+                    <button class="basket-item-delete">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <span class="basket-item-badge">
+                      подарок
+                    </span>
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                  </div>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="1" size="4" readonly id="counter6">
+                    </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
+                    <button class="basket-item-delete">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#" class="basket-item-img">
+                    <span class="basket-item-badge">
+                      подарок
+                    </span>
+                    <img src="./images/dest/img/basket-product.jpg" alt="Продукт">
+                  </a>
+                  <div class="basket-item-wrapper">
+                    <p class="basket-item-brand">BABOR</p>
+                    <p class="basket-item-name"><a href="#">Набор LIFTING CELLULAR 2020</a></p>
+                    <p class="basket-item-size">50 мл + 15 мл + 2*7 мл</p>
+                  </div>
+                  <div class="basket-item-cost-inner">
+                    <p class="basket-item-cost basket-item-cost-single">10 910 ₽</p>
+                    <div class="product-card-counter product-card-counter--basket">
+                      <input class="item-counter-input item-counter-input--basket" type="text"  value="1" size="4" readonly id="counter1">
+                    </div>
+                    <p class="basket-item-cost basket-item-cost--sum">10 910 ₽</p>
                     <button class="basket-item-delete">
                       <span class="visually-hidden">Удалить</span>
                     </button>
@@ -158,8 +224,8 @@
                   </div>
                   <div class="basket-detail-btns-block">
                     <button class="btn-white btn-white--pay">Оформить заказ</button>
-                    <button class="btn-white btn-white--icon btn-white--accent btn-white--pay">
-                      <svg class="svg-icon">
+                    <button class="btn--simple btn--simple-hover btn--simple--icon btn-white--pay">
+                      <svg class="svg-icon svg-icon--basket-btn">
                         <use
                           xlink:href="./images/sprites/svg/sprite.symbol.svg#icon_order"
                         ></use>

@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   headerEventHandler();
+  const lazyLoadInstance = new LazyLoad({
+    elements_selector: '.lazyload',
+  });
 });
 
 function onToggleHeaderSearch() {
@@ -121,6 +124,15 @@ $('#productCardSlider').slick({
     const thumb = $(slider.$slides[i]).data('image');
     return `<div style="background-image: url('${thumb}');" class="product-slider-pagin"></div>`;
   },
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        dots: false,
+        fade: false,
+      },
+    },
+  ],
 });
 $('#sliderPromoProduct').slick({
   slidesToShow: 4,
@@ -131,6 +143,16 @@ $('#sliderPromoProduct').slick({
   speed: 200,
   prevArrow: $('.promo-product--prew'),
   nextArrow: $('.promo-product--next'),
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        dots: false,
+        slidesToShow: 1,
+        arrows: false,
+      },
+    },
+  ],
 });
 
 const onSubmitSubscribe = (form) => {
@@ -197,10 +219,20 @@ const onToggleFooterDropDown = (btn) => {
     $(btn).siblings('.js-dropdown-footer').slideToggle(200);
   }
 };
-
+const onToggleProfDropDown = (btn) => {
+  if (isMobile()) {
+    $(btn).toggleClass('opened');
+    $(btn).siblings('.js-dropdown-prof').slideToggle(200);
+  }
+};
 const isMobile = () => {
   if ($(window).width() <= 1000) {
     return true;
   }
   return false;
+};
+
+const onToggleProductSpoiler = (btn) => {
+  $(btn).toggleClass('tabs-title-item-text--opened');
+  $(btn).siblings('.js-product-tab').slideToggle(200);
 };

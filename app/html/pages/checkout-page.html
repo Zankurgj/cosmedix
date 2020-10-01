@@ -12,7 +12,7 @@
     @@include('../includes/header.html')
     <div class="body">
       <div class="page">
-        <div class="container container--chekout">
+        <div class="container">
           <ul class="breadcrumbs breadcrumbs--checkout">
             <li>
               <a href="#" class="breadcrumbs-item">Back</a>
@@ -28,9 +28,11 @@
               >
             </li>
           </ul>
+        </div>
+        <div class="container container--chekout">
           <h1 class="checkout-title">Оформление заказа</h1>
           <div class="checkout-auth-msg">
-            <p>Уже покупали у нас? <button class="btn-link auth-btn">Авторизуйтесь!</button></p>
+            <p>Уже покупали у нас? <button class="btn-link auth-btn" onclick="onTogglePopUp('signinPopup')">Авторизуйтесь!</button></p>
           </div>
           <form class="checkout-form">
             <div class="checkout-form-col">
@@ -90,7 +92,7 @@
                     <span>
                       <p class="radio-text">Купить в подарок</p>
                       <p class="radio-text radio-text--small">- упакуем в праздничную упаковку; <br> - не станем класть документы;</p>
-                      <p><a href="#" class="link-accent link-accent--gift">подробнее</a></p>
+                      <p><a href="#" class="btn-link link-accent--gift">подробнее</a></p>
                     </span>
                 </label>
               </div>
@@ -107,7 +109,7 @@
                 </div>
                 <div class="checkout-form-sidebar-cost checkout-form-sidebar-cost--total">
                   <span class="checkout-cost-title">Итого</span>
-                  <span class="checkout-cost">0 ₽</span>
+                  <span class="checkout-cost">10 910 ₽</span>
                 </div>
                 <div class="checkout-form-sidebar-btns-block">
                   <label class="checkbox-wrapper checkbox-wrapper--checkout">
@@ -122,11 +124,11 @@
                     <input type="checkbox">
                      <span class="checkbox"></span>
                       <span>
-                        <p class="radio-text">принимаю <a class="link-accent" href="#">условия обработки персональных данных</a></p>
+                        <p class="radio-text">принимаю <a class="btn-link" href="#">условия обработки персональных данных</a></p>
                       </span>
                   </label>
 
-                  <button class="btn-white btn-white--accent btn-white--checkout">
+                  <button class="btn--simple btn--simple-hover btn--simple--checkout">
                     Подтвердить заказ
                   </button>
                 </div>
