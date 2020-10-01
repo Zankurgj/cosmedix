@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmedix</title>
+    <meta name="description" content="Cosmedix" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    @@include('../includes/header.html')
+    <div class="body">
+      <div class="page professional-page">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#" class="breadcrumbs-item">Back</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Home</a>
+              <span> / </span>
+            </li>
+            <li>
+              <a href="#" class="breadcrumbs-item">Мой кабинет</a>
+              <span> / </span>
+            </li>
+            <li>
+              <span class="breadcrumbs-item breadcrumbs-item--last"
+                >Персональные данные</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container container--professional block-content">
+          <div class="row row--professional">
+            <aside class="professional-nav-block">
+              <button
+                class="professional-nav-title"
+                onclick="onToggleProfDropDown(this)"
+              >
+                THE COMPANY
+              </button>
+              <nav class="professional-nav js-dropdown-prof">
+                <a href="./contacts-page.html" class="professional-nav-item"
+                  >Контакты</a
+                >
+                <a href="#" class="professional-nav-item">item1</a>
+                <a href="#" class="professional-nav-item">item2</a>
+                <a href="#" class="professional-nav-item">item3</a>
+              </nav>
+            </aside>
+
+            <div class="professional-container">
+              <h1 class="h1-title h1-title--professional">Aestheticians</h1>
+              <img
+                src="./images/dest/img/cosmi.jpg"
+                alt="Продукт"
+                class="img-response img--professional"
+              />
+              <p class="simple-text simple-text--professional">
+                Already working with a COSMEDIX spa partner? Our professional
+                website offers aestheticians access to product content,
+                educational videos, and more to enhance your experience in the
+                treatment room. To enroll in our aesthetician program, please
+                fill out the form below. We will contact you with login
+                information to access our exclusive online training center.
+                Please note that COSMEDIX products are only available for resale
+                to licensed professionals.
+              </p>
+              <p class="simple-text simple-text--professional">
+                The form below is for COSMEDIX aestheticians looking to utilize
+                our website as a training tool. If you are a prospective spa or
+                business looking for more information about carrying our line,
+                please use the
+                <a href="./professional-page.html#professional-form"
+                  >professional form.</a
+                >
+              </p>
+              <form action="" class="professional-form" id="professional-form">
+                <h1 class="h1-title h1-title--professional">
+                  Заполните форму и станьте нашим партнером
+                </h1>
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Имя</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Название проекта</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Город</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">E-mail</span>
+                </label>
+
+                <label class="input-ph-wrapper input-ph-wrapper--professional">
+                  <input type="text" class="input-ph" required />
+                  <span class="input-ph-text">Телефон</span>
+                </label>
+                <h3 class="simple-text-title">Ваше сообщение</h3>
+                <textarea
+                  class="text-area-base text-area-base--professional"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn--simple btn--simple-hover btn--professional-form"
+                >
+                  Отправить
+                </button>
+                <p class="simple-text-form">
+                  Нажимая на кнопку, вы даете согласие на обработку персональных
+                  данных и соглашаетесь
+                  <a class="btn-link" href="./privacy-policy.html"
+                    >c политикой конфиденциальности</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('../includes/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
