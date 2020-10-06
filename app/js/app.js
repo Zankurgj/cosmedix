@@ -94,22 +94,33 @@ $('#partnersSlider').slick({
   speed: 200,
   fade: true,
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 4000,
   customPaging: function (slider, i) {
     const thumb = $(slider.$slides[i]).data('image');
     return `<div class="pagination-img"><img src="${thumb}" alt="Партнер"></div>`;
   },
 });
 
-$('#productSlider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  infinite: false,
-  arrows: true,
-  dots: false,
-  speed: 200,
-  prevArrow: $('.slider-arrow-product--prew'),
-  nextArrow: $('.slider-arrow-product--next'),
+// $('#productSlider').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   infinite: false,
+//   arrows: true,
+//   dots: false,
+//   speed: 200,
+//   prevArrow: $('.slider-arrow-product--prew'),
+//   nextArrow: $('.slider-arrow-product--next'),
+// });
+
+var swiper = new Swiper('#productSlider', {
+  navigation: {
+    nextEl: '.slider-arrow-product--next',
+    prevEl: '.slider-arrow-product--prew',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+  },
 });
 
 $('#productCardSlider').slick({

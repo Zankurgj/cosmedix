@@ -28,6 +28,7 @@
     "font-awesome": "^4.7.0",
     "gulp-svg-sprite": "1.5.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^6.3.2",
     "vanilla-lazyload": "^17.1.2"
   }
 }

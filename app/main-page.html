@@ -827,12 +827,12 @@
           </section>
 
           <section class="main-best-sellers">
-            <div class="row">
+            <div class="row row--best-sellers">
               <div class="best-sellers-img-block best-sellers-col">
                 <img
-                  src="./images/dest/img/promo3.jpg"
+                  data-srcset="./images/dest/img/promo3-m.jpg 750w, ./images/dest/img/promo3.jpg 751w"
                   alt="Лучший товар"
-                  class="best-sellers-img"
+                  class="best-sellers-img img-response lazyload"
                 />
               </div>
               <div class="best-sellers-slider-block best-sellers-col">
@@ -1160,154 +1160,169 @@
               >
                 <span class="visually-hidden">Вперед</span>
               </button>
-              <div class="main-product-slider" id="productSlider">
-                <div class="main-product-slide">
-                  <div class="row row--wrap">
-                    <a
-                      href="#"
-                      class="main-product-slide--product main-product-slide-col"
-                    >
-                      <div class="main-product-slide-img">
-                        <img
-                          src="./images/dest/img/productslider.jpg"
-                          alt="Продукт"
-                        />
-                      </div>
-                      <p class="main-product-slide-name">Opti Crystal</p>
-                      <p class="main-product-slide-cost">$95.00</p>
-                      <span class="btn btn--simple btn-product-slider"
-                        >OUT OF STOCK</span
+              <div
+                class="main-product-slider swiper-container"
+                id="productSlider"
+              >
+                <div class="swiper-wrapper">
+                  <div class="main-product-slide swiper-slide">
+                    <div class="row row--wrap">
+                      <a
+                        href="#"
+                        class="main-product-slide--product main-product-slide-col"
                       >
-                    </a>
-                    <div
-                      class="main-product-slide--feedback main-product-slide-col"
-                    >
-                      <p class="main-product-slide-review">
-                        I have been using this product since April 2019, and I
-                        absolutely love it! Prior to using [Opti Crystal] I
-                        tried the high end name brands from large department
-                        stores to try and help with the appearance of my dark
-                        circles. These products did not deliver the results I
-                        was expecting, and actually caused increased dryness. I
-                        was so disappointed…I discovered this product from a
-                        friend and will say it’s the best thing ever! Thank you
-                        COSMEDIX!
-                      </p>
-                      <p class="main-product-slide-user-name">- Taneisha T.</p>
+                        <div class="main-product-slide-img">
+                          <img
+                            src="./images/dest/img/productslider.jpg"
+                            alt="Продукт"
+                          />
+                        </div>
+                        <p class="main-product-slide-name">Opti Crystal</p>
+                        <p class="main-product-slide-cost">$95.00</p>
+                        <span class="btn btn--simple btn-product-slider"
+                          >OUT OF STOCK</span
+                        >
+                      </a>
+                      <div
+                        class="main-product-slide--feedback main-product-slide-col"
+                      >
+                        <p class="main-product-slide-review">
+                          I have been using this product since April 2019, and I
+                          absolutely love it! Prior to using [Opti Crystal] I
+                          tried the high end name brands from large department
+                          stores to try and help with the appearance of my dark
+                          circles. These products did not deliver the results I
+                          was expecting, and actually caused increased dryness.
+                          I was so disappointed…I discovered this product from a
+                          friend and will say it’s the best thing ever! Thank
+                          you COSMEDIX!
+                        </p>
+                        <p class="main-product-slide-user-name">
+                          - Taneisha T.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-product-slide swiper-slide">
+                    <div class="row row--wrap">
+                      <a
+                        href="#"
+                        class="main-product-slide--product main-product-slide-col"
+                      >
+                        <div class="main-product-slide-img">
+                          <img
+                            src="./images/dest/img/productslider.jpg"
+                            alt="Продукт"
+                          />
+                        </div>
+                        <p class="main-product-slide-name">Opti Crystal</p>
+                        <p class="main-product-slide-cost">$95.00</p>
+                        <span class="btn btn--simple btn-product-slider"
+                          >OUT OF STOCK</span
+                        >
+                      </a>
+                      <div
+                        class="main-product-slide--feedback main-product-slide-col"
+                      >
+                        <p class="main-product-slide-review">
+                          I have been using this product since April 2019, and I
+                          absolutely love it! Prior to using [Opti Crystal] I
+                          tried the high end name brands from large department
+                          stores to try and help with the appearance of my dark
+                          circles. These products did not deliver the results I
+                          was expecting, and actually caused increased dryness.
+                          I was so disappointed…I discovered this product from a
+                          friend and will say it’s the best thing ever! Thank
+                          you COSMEDIX!
+                        </p>
+                        <p class="main-product-slide-user-name">
+                          - Taneisha T.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-product-slide swiper-slide">
+                    <div class="row row--wrap">
+                      <a
+                        href="#"
+                        class="main-product-slide--product main-product-slide-col"
+                      >
+                        <div class="main-product-slide-img">
+                          <img
+                            src="./images/dest/img/productslider.jpg"
+                            alt="Продукт"
+                          />
+                        </div>
+                        <p class="main-product-slide-name">Opti Crystal</p>
+                        <p class="main-product-slide-cost">$95.00</p>
+                        <span class="btn btn--simple btn-product-slider"
+                          >OUT OF STOCK</span
+                        >
+                      </a>
+                      <div
+                        class="main-product-slide--feedback main-product-slide-col"
+                      >
+                        <p class="main-product-slide-review">
+                          I have been using this product since April 2019, and I
+                          absolutely love it! Prior to using [Opti Crystal] I
+                          tried the high end name brands from large department
+                          stores to try and help with the appearance of my dark
+                          circles. These products did not deliver the results I
+                          was expecting, and actually caused increased dryness.
+                          I was so disappointed…I discovered this product from a
+                          friend and will say it’s the best thing ever! Thank
+                          you COSMEDIX!
+                        </p>
+                        <p class="main-product-slide-user-name">
+                          - Taneisha T.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="main-product-slide swiper-slide">
+                    <div class="row row--wrap">
+                      <a
+                        href="#"
+                        class="main-product-slide--product main-product-slide-col"
+                      >
+                        <div class="main-product-slide-img">
+                          <img
+                            src="./images/dest/img/productslider.jpg"
+                            alt="Продукт"
+                          />
+                        </div>
+                        <p class="main-product-slide-name">Opti Crystal</p>
+                        <p class="main-product-slide-cost">$95.00</p>
+                        <span class="btn btn--simple btn-product-slider"
+                          >OUT OF STOCK</span
+                        >
+                      </a>
+                      <div
+                        class="main-product-slide--feedback main-product-slide-col"
+                      >
+                        <p class="main-product-slide-review">
+                          I have been using this product since April 2019, and I
+                          absolutely love it! Prior to using [Opti Crystal] I
+                          tried the high end name brands from large department
+                          stores to try and help with the appearance of my dark
+                          circles. These products did not deliver the results I
+                          was expecting, and actually caused increased dryness.
+                          I was so disappointed…I discovered this product from a
+                          friend and will say it’s the best thing ever! Thank
+                          you COSMEDIX!
+                        </p>
+                        <p class="main-product-slide-user-name">
+                          - Taneisha T.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="main-product-slide">
-                  <div class="row row--wrap">
-                    <a
-                      href="#"
-                      class="main-product-slide--product main-product-slide-col"
-                    >
-                      <div class="main-product-slide-img">
-                        <img
-                          src="./images/dest/img/productslider.jpg"
-                          alt="Продукт"
-                        />
-                      </div>
-                      <p class="main-product-slide-name">Opti Crystal</p>
-                      <p class="main-product-slide-cost">$95.00</p>
-                      <span class="btn btn--simple btn-product-slider"
-                        >OUT OF STOCK</span
-                      >
-                    </a>
-                    <div
-                      class="main-product-slide--feedback main-product-slide-col"
-                    >
-                      <p class="main-product-slide-review">
-                        I have been using this product since April 2019, and I
-                        absolutely love it! Prior to using [Opti Crystal] I
-                        tried the high end name brands from large department
-                        stores to try and help with the appearance of my dark
-                        circles. These products did not deliver the results I
-                        was expecting, and actually caused increased dryness. I
-                        was so disappointed…I discovered this product from a
-                        friend and will say it’s the best thing ever! Thank you
-                        COSMEDIX!
-                      </p>
-                      <p class="main-product-slide-user-name">- Taneisha T.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-product-slide">
-                  <div class="row row--wrap">
-                    <a
-                      href="#"
-                      class="main-product-slide--product main-product-slide-col"
-                    >
-                      <div class="main-product-slide-img">
-                        <img
-                          src="./images/dest/img/productslider.jpg"
-                          alt="Продукт"
-                        />
-                      </div>
-                      <p class="main-product-slide-name">Opti Crystal</p>
-                      <p class="main-product-slide-cost">$95.00</p>
-                      <span class="btn btn--simple btn-product-slider"
-                        >OUT OF STOCK</span
-                      >
-                    </a>
-                    <div
-                      class="main-product-slide--feedback main-product-slide-col"
-                    >
-                      <p class="main-product-slide-review">
-                        I have been using this product since April 2019, and I
-                        absolutely love it! Prior to using [Opti Crystal] I
-                        tried the high end name brands from large department
-                        stores to try and help with the appearance of my dark
-                        circles. These products did not deliver the results I
-                        was expecting, and actually caused increased dryness. I
-                        was so disappointed…I discovered this product from a
-                        friend and will say it’s the best thing ever! Thank you
-                        COSMEDIX!
-                      </p>
-                      <p class="main-product-slide-user-name">- Taneisha T.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="main-product-slide">
-                  <div class="row row--wrap">
-                    <a
-                      href="#"
-                      class="main-product-slide--product main-product-slide-col"
-                    >
-                      <div class="main-product-slide-img">
-                        <img
-                          src="./images/dest/img/productslider.jpg"
-                          alt="Продукт"
-                        />
-                      </div>
-                      <p class="main-product-slide-name">Opti Crystal</p>
-                      <p class="main-product-slide-cost">$95.00</p>
-                      <span class="btn btn--simple btn-product-slider"
-                        >OUT OF STOCK</span
-                      >
-                    </a>
-                    <div
-                      class="main-product-slide--feedback main-product-slide-col"
-                    >
-                      <p class="main-product-slide-review">
-                        I have been using this product since April 2019, and I
-                        absolutely love it! Prior to using [Opti Crystal] I
-                        tried the high end name brands from large department
-                        stores to try and help with the appearance of my dark
-                        circles. These products did not deliver the results I
-                        was expecting, and actually caused increased dryness. I
-                        was so disappointed…I discovered this product from a
-                        friend and will say it’s the best thing ever! Thank you
-                        COSMEDIX!
-                      </p>
-                      <p class="main-product-slide-user-name">- Taneisha T.</p>
-                    </div>
-                  </div>
-                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
             </div>
           </section>
