@@ -717,15 +717,61 @@
     <div class="body">
       <div class="page">
         <div class="container">
-          <a href="#" class="main-promo main-promo--img">
-            <img
-              data-srcset="./images/dest/img/promoM.jpg 750w, 
-              ./images/dest/img/promoD.jpg 751w"
-              class="lazyload"
-              alt="Продукт"
-              class="main-promo-img"
-            />
-          </a>
+          <div class="main-promo-slider-wrapper">
+            <button
+              class="slider-arrow slider-arrow--prew slider-arrow--white arrow-main-promo arrow-main-promo--prew"
+            >
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button
+              class="slider-arrow slider-arrow--next slider-arrow--white arrow-main-promo arrow-main-promo--next"
+            >
+              <span class="visually-hidden">Вперед</span>
+            </button>
+            <section class="main-promo-slider" id="mainPromoSlide">
+              <a href="#" class="main-promo-slider-slide">
+                <img
+                  data-srcset="./images/dest/img/mainpromoslide-m.jpg 1000w, 
+              ./images/dest/img/mainpromoslide.jpg 1001w"
+                  class="lazyload"
+                  alt="Продукт"
+                />
+                <button
+                  class="btn--simple btn--simple--border btn--simple-hover btn--promo-slider-slide"
+                >
+                  Купить
+                </button>
+              </a>
+
+              <a href="#" class="main-promo-slider-slide">
+                <img
+                  data-srcset="./images/dest/img/mainpromoslide-m.jpg 750w, 
+              ./images/dest/img/mainpromoslide.jpg 751w"
+                  class="lazyload"
+                  alt="Продукт"
+                />
+                <button
+                  class="btn--simple btn--simple--border btn--simple-hover btn--promo-slider-slide"
+                >
+                  Купить
+                </button>
+              </a>
+
+              <a href="#" class="main-promo-slider-slide">
+                <img
+                  data-srcset="./images/dest/img/mainpromoslide-m.jpg 750w, 
+              ./images/dest/img/mainpromoslide.jpg 751w"
+                  class="lazyload"
+                  alt="Продукт"
+                />
+                <button
+                  class="btn--simple btn--simple--border btn--simple-hover btn--promo-slider-slide"
+                >
+                  Купить
+                </button>
+              </a>
+            </section>
+          </div>
           <section class="main-promo main-promo--text">
             <div class="main-promo-text-container">
               <h1 class="main-promo-text-title">CLEAN</h1>
@@ -1492,5 +1538,8 @@
 </footer>
 
     <script src="js/app.min.js"></script>
+    <script>
+      initSliderPromo();
+    </script>
   </body>
 </html>

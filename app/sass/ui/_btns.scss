@@ -32,6 +32,16 @@ input[type='submit'] {
     color: #fff;
   }
 }
+.btn--simple--border {
+  border: 1px solid #fff;
+  &.btn--simple-hover {
+    &:hover {
+      background-color: #fff;
+      color: #25272b;
+      border-color: #25272b;
+    }
+  }
+}
 .btn--simple-hover {
   &:hover {
     background-color: #fff;

@@ -101,16 +101,42 @@ $('#partnersSlider').slick({
   },
 });
 
-// $('#productSlider').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   infinite: false,
-//   arrows: true,
-//   dots: false,
-//   speed: 200,
-//   prevArrow: $('.slider-arrow-product--prew'),
-//   nextArrow: $('.slider-arrow-product--next'),
-// });
+const initSliderPromo = () => {
+  if ($.fn.slick != undefined) {
+    var $slider = $('#mainPromoSlide');
+    function showSliderScreen($widthScreen) {
+      if ($widthScreen >= '1000') {
+        if (!$slider.hasClass('slick-initialized')) {
+          $slider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            dots: true,
+            speed: 200,
+            autoplay: false,
+            prevArrow: $('.arrow-main-promo--prew'),
+            nextArrow: $('.arrow-main-promo--next'),
+            customPaging: function (slider, i) {
+              return `<div class="main-promo-pagination"></div>`;
+            },
+          });
+        }
+      } else {
+        if ($slider.hasClass('slick-initialized')) {
+          $slider.slick('unslick');
+        }
+      }
+    }
+    var widthScreen = $(window).width();
+    $(window)
+      .ready(showSliderScreen(widthScreen))
+      .resize(function () {
+        var widthScreen = $(window).width();
+        showSliderScreen(widthScreen);
+      });
+  }
+};
 
 var swiper = new Swiper('#productSlider', {
   navigation: {
