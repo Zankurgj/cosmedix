@@ -246,6 +246,10 @@
       @media screen and (max-width: $mobile-bp) {
         max-width: 85px;
       }
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
 }
