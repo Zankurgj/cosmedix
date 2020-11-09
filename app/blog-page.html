@@ -17,7 +17,6 @@
 ></div>
 <header class="main-header">
   <div class="container">
-    <!-- logo -->
     <div class="main-header-inner">
       <button
         class="main-header-nav-btn icomon-icon"
@@ -25,6 +24,7 @@
       >
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      <!-- logo -->
       <a href="#" class="main-header-logo">
         <img
           class="main-header-logo-img"
@@ -33,215 +33,37 @@
         />
         <span class="visually-hidden">Главная страницы</span>
       </a>
-      <!-- nav -->
-      <nav class="main-header-nav" id="menuMobile">
-        <div class="main-header-nav-title">
-          <span>Меню</span>
-          <button class="mobile-close-btn" onclick="onToggleMobileMenu()">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-        </div>
-        <ul>
-          <li class="js-sub-nav-parent">
-            <span
-              class="main-header-nav-item main-header-nav--dropdown-wrapper"
-            >
-              <a class="main-header-nav-item--link" href="#">Shop</a>
-              <button
-                class="main-header-nav-item-dropdown"
-                onclick="onToggleDropdownMobile(this)"
+      <div class="main-header-right-block js-right-block hide-mobile">
+          <div
+            class="main-header-link main-header-link-dropdown-wrapper main-header-link-m-hide"
+          >
+            User name
+            <div class="main-header-link-dropdown">
+              <a class="main-header-link-dropdown-item" href="#"
+                >Личные данные</a
               >
-                <span class="visually-hidden">Открыть меню</span>
+              <a class="main-header-link-dropdown-item" href="#"
+                >Мои заказы</a
+              >
+              <button
+                class="main-header-link-dropdown-item active main-header-link-dropdown-item--esc"
+              >
+                Выйти
               </button>
-            </span>
-            <!-- sub nav -->
-            <div class="main-header-sub-nav js-sub-nav">
-              <ul class="container main-header-sub-nav-container">
-                <li class="main-header-sub-nav-column-inner">
-                  <div class="main-header-sub-nav-column">
-                    <button
-                      class="main-header-sub-nav-item main-header-sub-nav-item--title"
-                      onclick="onToggleChildDD(this)"
-                    >
-                      Shop
-                    </button>
-                    <ul class="js-child-dropwdown nav-child-dropwdown">
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >All Products</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Bestsellers</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Body By COSMEDIX</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >New Arrivals</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Starter Kits</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#">Bundles</a>
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Men's Skincare</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="main-header-sub-nav-column-inner">
-                  <div class="main-header-sub-nav-column">
-                    <button
-                      class="main-header-sub-nav-item main-header-sub-nav-item--title"
-                      onclick="onToggleChildDD(this)"
-                    >
-                      Shop
-                    </button>
-                    <ul class="js-child-dropwdown nav-child-dropwdown">
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >All Products</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Bestsellers</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Body By COSMEDIX</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >New Arrivals</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Starter Kits</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#">Bundles</a>
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Men's Skincare</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li class="main-header-sub-nav-column-inner">
-                  <div class="main-header-sub-nav-column">
-                    <button
-                      class="main-header-sub-nav-item main-header-sub-nav-item--title"
-                      onclick="onToggleChildDD(this)"
-                    >
-                      Shop
-                    </button>
-                    <ul class="js-child-dropwdown nav-child-dropwdown">
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >All Products</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Bestsellers</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Body By COSMEDIX</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >New Arrivals</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Starter Kits</a
-                        >
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#">Bundles</a>
-                      </li>
-                      <li>
-                        <a class="main-header-sub-nav-item" href="#"
-                          >Men's Skincare</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
             </div>
-          </li>
-          <li>
-            <a class="main-header-nav-item" href="#">Press</a>
-          </li>
-          <li>
-            <a class="main-header-nav-item" href="#">Spa Exclusive</a>
-          </li>
-          <li class="main-header-nav-right">
-            <div
-              class="main-header-link main-header-link-dropdown-wrapper main-header-link-m-hide"
-            >
-              User name
-              <div class="main-header-link-dropdown">
-                <a class="main-header-link-dropdown-item" href="#"
-                  >Личные данные</a
-                >
-                <a class="main-header-link-dropdown-item" href="#"
-                  >Мои заказы</a
-                >
-                <button
-                  class="main-header-link-dropdown-item active main-header-link-dropdown-item--esc"
-                >
-                  Выйти
-                </button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <button
-              class="main-header-link"
-              onclick="onTogglePopUp('signinPopup')"
-            >
-              Sign in
-            </button>
-          </li>
-          <li>
-            <button
-              class="main-header-link"
-              onclick="onTogglePopUp('signupPopup')"
-            >
-              Sign up
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-header-right-block js-right-block">
+          </div>
+          <button
+            class="main-header-link hide-mobile"
+            onclick="onTogglePopUp('signinPopup')"
+          >
+            Войти
+          </button>
+          <button
+            class="main-header-link hide-mobile"
+            onclick="onTogglePopUp('signupPopup')"
+          >
+            Зарегестрироваться
+          </button>
         <button
           class="main-header-btn main-header-btn--search icomon-icon"
           onclick="onToggleHeaderSearch()"
@@ -255,179 +77,379 @@
           <span class="visually-hidden">корзина</span>
         </button>
       </div>
-      <div class="main-header-search-wrapper js-search-container">
-        <form class="main-header-search-form">
-          <div class="main-header-search-input-wrapper">
-            <input
-              type="search"
-              class="main-header-search-input"
-              id="headerSearch"
-              maxlength="128"
-              autocomplete="off"
-              placeholder="What are you looking for?"
-            />
+    </div>
+    <!-- nav -->
+    <nav class="main-header-nav" id="menuMobile">
+      <div class="main-header-nav-title">
+        <span>Меню</span>
+        <button class="mobile-close-btn" onclick="onToggleMobileMenu()">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <ul>
+        <li class="js-sub-nav-parent">
+          <span
+            class="main-header-nav-item main-header-nav--dropdown-wrapper"
+          >
+            <a class="main-header-nav-item--link" href="#">Новинки</a>
             <button
-              type="submit"
-              class="main-header-search-btn main-header-search-btn--search icomon-icon"
+              class="main-header-nav-item-dropdown"
+              onclick="onToggleDropdownMobile(this)"
             >
-              <span class="visually-hidden">поиск</span>
+              <span class="visually-hidden">Открыть меню</span>
             </button>
-            <button
-              type="button"
-              class="main-header-search-btn main-header-search-btn--close icomon-icon"
-              onclick="onToggleHeaderSearch()"
-            >
-              <span class="visually-hidden">Закрыть поиск</span>
-            </button>
-          </div>
-        </form>
-        <div class="main-header-result" id="headerSearchContainer">
-          <nav class="main-header-result-nav">
-            <ul>
-              <li>
-                <label class="tabs-block-item">
-                  <input
-                    type="radio"
-                    name="search"
-                    class="tabs-block-item-input visually-hidden"
-                    data-tab-type="search"
-                    data-tab-id="search1"
-                    checked
-                    onchange="onChangeTabs(this)"
-                  />
-                  <span class="main-header-result-nav-item">item1</span>
-                </label>
+          </span>
+          <!-- sub nav -->
+          <div class="main-header-sub-nav js-sub-nav">
+            <ul class="container main-header-sub-nav-container">
+              <li class="main-header-sub-nav-column-inner">
+                <div class="main-header-sub-nav-column">
+                  <button
+                    class="main-header-sub-nav-item main-header-sub-nav-item--title"
+                    onclick="onToggleChildDD(this)"
+                  >
+                    Shop
+                  </button>
+                  <ul class="js-child-dropwdown nav-child-dropwdown">
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >All Products</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Bestsellers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Body By COSMEDIX</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >New Arrivals</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Starter Kits</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#">Bundles</a>
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Men's Skincare</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li>
-                <label class="tabs-block-item">
-                  <input
-                    type="radio"
-                    name="search"
-                    class="tabs-block-item-input visually-hidden"
-                    data-tab-type="search"
-                    data-tab-id="search2"
-                    onchange="onChangeTabs(this)"
-                  />
-                  <span class="main-header-result-nav-item">item2</span>
-                </label>
+
+              <li class="main-header-sub-nav-column-inner">
+                <div class="main-header-sub-nav-column">
+                  <button
+                    class="main-header-sub-nav-item main-header-sub-nav-item--title"
+                    onclick="onToggleChildDD(this)"
+                  >
+                    Shop
+                  </button>
+                  <ul class="js-child-dropwdown nav-child-dropwdown">
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >All Products</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Bestsellers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Body By COSMEDIX</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >New Arrivals</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Starter Kits</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#">Bundles</a>
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Men's Skincare</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="main-header-sub-nav-column-inner">
+                <div class="main-header-sub-nav-column">
+                  <button
+                    class="main-header-sub-nav-item main-header-sub-nav-item--title"
+                    onclick="onToggleChildDD(this)"
+                  >
+                    Shop
+                  </button>
+                  <ul class="js-child-dropwdown nav-child-dropwdown">
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >All Products</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Bestsellers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Body By COSMEDIX</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >New Arrivals</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Starter Kits</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#">Bundles</a>
+                    </li>
+                    <li>
+                      <a class="main-header-sub-nav-item" href="#"
+                        >Men's Skincare</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
-          </nav>
-          <div class="main-header-result-inner">
-            <h4 class="main-header-result-title">PRODUCT SUGGESTIONS</h4>
-            <div
-              class="main-header-result-tab active"
-              id="search1"
-              data-tab-type="search"
-            >
-              <div class="main-header-result-item-wrapper">
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-              </div>
-              <a href="#" class="main-header-result-link"
-                >SEE 1 RESULT FOR "item1"</a
-              >
-            </div>
-            <div
-              class="main-header-result-tab"
-              id="search2"
-              data-tab-type="search"
-            >
-              <div class="main-header-result-item-wrapper">
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-                <a href="#" class="main-header-result-item">
-                  <div
-                    class="main-header-result-item-img"
-                    style="
-                      background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
-                    "
-                  ></div>
-                  <p class="main-header-result-item-title">Humidify</p>
-                  <p class="main-header-result-item-text">$90.00</p>
-                </a>
-              </div>
-              <a href="#" class="main-header-result-link"
-                >SEE 1 RESULT FOR "item2"</a
-              >
-            </div>
           </div>
+        </li>
+        <li>
+          <a class="main-header-nav-item" href="#">Очищение</a>
+        </li>
+        <li>
+          <a class="main-header-nav-item" href="#">Для лица</a>
+        </li>
+        <li>
+          <a class="main-header-nav-item" href="#">Для тела</a>
+        </li>
+        <li>
+          <a class="main-header-nav-item" href="#">Наборы</a>
+        </li>
+        <li>
+          <a class="main-header-nav-item" href="#">Стать партнером</a>
+        </li>
+        <li class="main-header-nav-item hide-desktop">
+          <a class="main-header-link" href="#">Личный кабинет</a>
+        </li>
+        <li class="main-header-nav-item hide-desktop">
+          <button
+            class="main-header-link"
+            onclick="onTogglePopUp('signinPopup')"
+          >
+            Войти
+          </button>
+        </li>
+        <li class="main-header-nav-item hide-desktop">
+          <button
+            class="main-header-link"
+            onclick="onTogglePopUp('signupPopup')"
+          >
+            Зарегестрироваться
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-header-search-wrapper container js-search-container">
+    <form class="main-header-search-form">
+      <div class="main-header-search-input-wrapper">
+        <input
+          type="search"
+          class="main-header-search-input"
+          id="headerSearch"
+          maxlength="128"
+          autocomplete="off"
+          placeholder="What are you looking for?"
+        />
+        <button
+          type="submit"
+          class="main-header-search-btn main-header-search-btn--search icomon-icon"
+        >
+          <span class="visually-hidden">поиск</span>
+        </button>
+        <button
+          type="button"
+          class="main-header-search-btn main-header-search-btn--close icomon-icon"
+          onclick="onToggleHeaderSearch()"
+        >
+          <span class="visually-hidden">Закрыть поиск</span>
+        </button>
+      </div>
+    </form>
+    <div class="main-header-result" id="headerSearchContainer">
+      <nav class="main-header-result-nav">
+        <ul>
+          <li>
+            <label class="tabs-block-item">
+              <input
+                type="radio"
+                name="search"
+                class="tabs-block-item-input visually-hidden"
+                data-tab-type="search"
+                data-tab-id="search1"
+                checked
+                onchange="onChangeTabs(this)"
+              />
+              <span class="main-header-result-nav-item">item1</span>
+            </label>
+          </li>
+          <li>
+            <label class="tabs-block-item">
+              <input
+                type="radio"
+                name="search"
+                class="tabs-block-item-input visually-hidden"
+                data-tab-type="search"
+                data-tab-id="search2"
+                onchange="onChangeTabs(this)"
+              />
+              <span class="main-header-result-nav-item">item2</span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header-result-inner">
+        <h4 class="main-header-result-title">PRODUCT SUGGESTIONS</h4>
+        <div
+          class="main-header-result-tab active"
+          id="search1"
+          data-tab-type="search"
+        >
+          <div class="main-header-result-item-wrapper">
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+          </div>
+          <a href="#" class="main-header-result-link"
+            >SEE 1 RESULT FOR "item1"</a
+          >
+        </div>
+        <div
+          class="main-header-result-tab"
+          id="search2"
+          data-tab-type="search"
+        >
+          <div class="main-header-result-item-wrapper">
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+            <a href="#" class="main-header-result-item">
+              <div
+                class="main-header-result-item-img"
+                style="
+                  background-image: url('https://skin.cosmedix.com/media/catalog/product/cache/2/image/300x300/9df78eab33525d08d6e5fb8d27136e95/h/u/humidify-2.jpg');
+                "
+              ></div>
+              <p class="main-header-result-item-title">Humidify</p>
+              <p class="main-header-result-item-text">$90.00</p>
+            </a>
+          </div>
+          <a href="#" class="main-header-result-link"
+            >SEE 1 RESULT FOR "item2"</a
+          >
         </div>
       </div>
     </div>
