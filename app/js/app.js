@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const lazyLoadInstance = new LazyLoad({
     elements_selector: '.lazyload',
   });
+  phInputEventHandler();
 });
 
 function onToggleHeaderSearch() {
@@ -272,4 +273,19 @@ const isMobile = () => {
 const onToggleProductSpoiler = (btn) => {
   $(btn).toggleClass('tabs-title-item-text--opened');
   $(btn).siblings('.js-product-tab').slideToggle(200);
+};
+
+const phInputEventHandler = () => {
+  $('input.input-ph').on('input', function () {
+    const input = $(this);
+    setPhInputClass(input, 'hav-val');
+  });
+};
+
+const setPhInputClass = (inputSelector, className) => {
+  if (inputSelector.val()) {
+    inputSelector.addClass(className);
+  } else {
+    inputSelector.removeClass(className);
+  }
 };
