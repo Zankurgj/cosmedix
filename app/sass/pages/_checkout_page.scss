@@ -118,3 +118,16 @@
   margin-top: 15px;
   border: 1px solid transparent;
 }
+.container--chekout {
+  .bx-sls .dropdown-block {
+    @extend .input-ph;
+    height: 52px !important;
+    padding: 14px 22px 5px 30px !important;
+  }
+  .bx-sls .dropdown-icon {
+    top: 20px;
+  }
+  .bx-sls .bx-ui-sls-pane {
+    top: 50px;
+  }
+}
