@@ -66,40 +66,42 @@ $('#bestSellersSlider').slick({
   speed: 200,
   prevArrow: $('.slider-arrow-sellers--prew'),
   nextArrow: $('.slider-arrow-sellers--next'),
-  // responsive: [
-  //   {
-  //     breakpoint: 1024,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1,
-  //       variableWidth: true,
-  //       infinite: false,
-  //       arrows: false,
-  //       dots: true,
-  //       centerMode: false,
-  //       speed: 200,
-  //       customPaging: function (slider, i) {
-  //         return `<div class="product-gallery-slider-pagin--mobile"></div>`;
-  //       },
-  //     },
-  //   },
-  // ],
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        dots: true,
+        arrows: false,
+      },
+    },
+  ],
 });
 
-$('#partnersSlider').slick({
+$('#partnersSliderMain').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   infinite: true,
   arrows: false,
-  dots: true,
-  speed: 200,
-  fade: true,
+  dots: false,
+  asNavFor: '#partnersSliderNav',
   autoplay: true,
   autoplaySpeed: 4000,
-  customPaging: function (slider, i) {
-    const thumb = $(slider.$slides[i]).data('image');
-    return `<div class="pagination-img"><img src="${thumb}" alt="Партнер"></div>`;
-  },
+});
+$('#partnersSliderNav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  infinite: true,
+  asNavFor: '#partnersSliderMain',
+  arrows: false,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+  ],
 });
 
 const initSliderPromo = () => {
@@ -144,9 +146,19 @@ var swiper = new Swiper('#productSlider', {
     nextEl: '.slider-arrow-product--next',
     prevEl: '.slider-arrow-product--prew',
   },
+  autoHeight: true,
   scrollbar: {
     el: '.swiper-scrollbar',
     hide: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1000: {
+      scrollbar: false,
+    },
   },
 });
 
