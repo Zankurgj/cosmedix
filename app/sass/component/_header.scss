@@ -66,12 +66,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url('../images/dest/icons/logo_mobile.png');
+    background-size: 100%;
   }
   @media screen and (max-width: 400px) {
-    left: 68px;
-    transform: translate(0, -50%);
-    background-size: 100%;
     width: 130px;
+  }
+  @media screen and (max-width: 350px) {
+    width: 110px;
   }
 }
 .main-header-nav-overlay {
